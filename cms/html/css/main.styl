@@ -20,12 +20,47 @@ input
 	font-weight 400
 	color #1283ff
 	text-transform uppercase
-  
+.btn-save
+	color: #fff
+	box-shadow: 0px 5px 8px -3px rgba(0,0,0,0.35)
+	border: 0
+	height: 49px
+	width: 171px
+	font-size: 13px
+	text-transform: uppercase
+	font-weight: 600
+	border-radius: 25px
+	margin: 0 1.5em
+.btn-cancel
+	border: 0px
+	border-bottom: 2px solid rgba(0,0,0,0.2)
+	padding: 1.15em 0 0.4em
+	border-radius: 0
+	color: #b3b3b3
+	font-weight: bold
+	text-transform: uppercase
+	font-size: 12px
+	letter-spacing: 0.3px
+	margin: 0 1.5em
+	background: transparent
+	box-shadow: none
+.token-input-dropdown
+	border 0!important
+	.alternative-text
+		font-family 'lato'
+		font-size 13px
+		font-weight 400!important
+		padding-top 5px
+.absolute-center
+	position: absolute
+	transform: translate(-50%, -50%)
+	top: 50%
+	left: 50%
 /*Errors messages*/
 .parsley-errors-list
 	display none
 .parsley-error
-	border-color: rgb(255, 63, 28) !important;
+	border-color: rgb(255, 63, 28) !important
 	background-color: rgba(255, 255, 255, 0.23) !important
 /*Loading*/
 .loading 
@@ -159,8 +194,7 @@ input[type="password"]
 	background-color: #ececf5;
 	/*Listado*/
 	.data-list 
-		padding 0 2% 
-		padding-top 2em
+		padding 2em
 		table 
 			width 100%
 			border-collapse: separate;
@@ -263,7 +297,8 @@ input[type="password"]
 		border-radius 4px
 		background-color #ffffff
 		box-shadow 0 2px 4px 0 rgba(0, 0, 0, 0.12)
-		border solid 1px #e2dfdf
+		border solid 1px #e2dfdf		
+		/*Administradores form style*/
 		form 
 			padding 2em 10em
 			h4
@@ -272,14 +307,37 @@ input[type="password"]
 				font-size 13px
 				color rgb(18, 131, 255)
 				letter-spacing 0.3px
-			.personal-information, .universidad
-				border-bottom solid 1px #1183ff42
+			/*New Level*/
+			.img-preview
+				#files
+					position: absolute
+					left: -9999px
+					top: -9999px
+					z-index: -9999
+				.img-container
+					width: 140px
+					height: 140px
+					border-radius: 8px
+					background-color: #eaeaeb
+					position: relative
+					overflow: hidden
+				span 
+					letter-spacing: 0.3px
+					color: #9b9b9b
+					font-size: 12px
+					text-transform: uppercase
+					padding-left: 5px
+				.upload-btn {
+					margin-top 15px
+					cursor pointer
+				}
+			/*------*/
+			.content-form
 				padding-bottom 40px
-			.personal-information
 				.row 
 					padding-top 12px 
 					> div
-						height 80px
+						height 80px 
 						label
 							position absolute
 							top 26px
@@ -335,31 +393,81 @@ input[type="password"]
 							position: absolute
 							bottom: 40px
 							left: 235px
-			.permisos
-				.row
-					padding-top 10px
-				label
-					letter-spacing 0.3px
-					color #5a606699
-					font-size 16px
-					padding-bottom 17px
-					padding-left 50px
-					input
-						height 0px
-						width 0px
-						position absolute 
-						&:before
-							content url('../img/unchecked.png')
-							top 3px
-							left -28px
-							position absolute 
-							cursor pointer
-						&.checked
-							&:before
-								content url('../img/checked.png')
-			.permisos, .universidad 
-				padding-top 15px
 				
+				/*Administradores*/
+				&.personal-information, &.universidad
+					border-bottom solid 1px #1183ff42
+				&.personal-information
+				&.universidad
+					ul.token-input-list
+						border-radius: 8px
+						border: solid 2px #d3d3d3
+						width: 100%
+						min-height: 50px
+						padding: 4px 10px
+						.token-input-token
+							border-radius: 20px
+							background-color: rgba(245, 243, 243, 0.99)
+							display: inline-block
+							color: #5a6066
+							font-size: 16px
+							font-weight: 400
+							letter-spacing: 0.3px
+							padding: 5px 15px
+							font-family: 'Lato', sans-serif
+							&:nth-child(n-1)
+								margin-right: 15px
+							span.token-input-delete-token
+								color: white
+								width: 22px
+								height: 22px
+								text-align: center
+								border-radius: 100%
+								background-color: #b9b9b9
+								font-size: 20px
+								line-height: 20px
+								font-weight: 100
+								margin-left: 15px
+						.token-input-input-token
+							display: inline-block
+							vertical-align: top
+							padding: 6px 0
+							input#token-input-demo-input-local
+								letter-spacing: 0.3px
+								color: rgba(90, 96, 102, 0.6)
+								font-size: 16px
+								min-width: 200px
+								padding: 0px 20px;
+								&::-webkit-input-placeholder { font-size: 15px } /* WebKit */
+								&:-moz-placeholder { font-size: 15px } /* Firefox 18- */
+								&::-moz-placeholder { font-size: 15px } /* Firefox 19+ */
+								&:-ms-input-placeholder { font-size: 15px } /* IE 10+ */				
+				&.permisos
+					.row
+						padding-top 10px
+					label
+						letter-spacing 0.3px
+						color #5a606699
+						font-size 16px
+						padding-bottom 17px
+						padding-left 50px
+						input
+							height 0px
+							width 0px
+							position absolute 
+							&:before
+								content url('../img/unchecked.png')
+								top 3px
+								left -28px
+								position absolute 
+								cursor pointer
+							&.checked
+								&:before
+									content url('../img/checked.png')
+				&.permisos, &.universidad 
+					padding-top 15px
+			.actions
+				padding: 20px 0 15px;	
 	.data-list.admin-new .head 
 		border-bottom solid 2px #e5e6e7
 	.search-form	
