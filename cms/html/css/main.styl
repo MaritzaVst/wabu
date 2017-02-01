@@ -56,6 +56,8 @@ input
 	transform: translate(-50%, -50%)
 	top: 50%
 	left: 50%
+.btn-block 
+	display block
 /*Errors messages*/
 .parsley-errors-list
 	display none
@@ -300,15 +302,36 @@ input[type="password"]
 		border solid 1px #e2dfdf		
 		/*Administradores form style*/
 		form 
-			padding 2em 10em
+			padding 2em 10em 5em
+			&.new-level
+				min-height calc(100vh - 200px)
+				display table
+				.actions
+					display: table-footer-group
 			h4
 				font-weight 400 
 				text-transform uppercase
 				font-size 13px
 				color rgb(18, 131, 255)
 				letter-spacing 0.3px
-			/*New Level*/
+				
+			/*General*/
+			.textarea-container
+				padding-top 20px
+				padding-bottom 30px
+				textarea
+					width: 550px
+					height: 80px
+					border-radius: 8px
+					border: solid 2px #d3d3d3
+			label.text-blue 
+				letter-spacing 0.3px
+				color #1283ff
+				font-size 13px
+				padding-bottom 8px
+			/*Image Upload*/
 			.img-preview
+				padding-top: 40px
 				#files
 					position: absolute
 					left: -9999px
@@ -321,6 +344,9 @@ input[type="password"]
 					background-color: #eaeaeb
 					position: relative
 					overflow: hidden
+					&.active
+						border: solid 2px #d3d3d3
+						background-color: #ffffff
 				span 
 					letter-spacing: 0.3px
 					color: #9b9b9b
@@ -332,13 +358,20 @@ input[type="password"]
 					cursor pointer
 				}
 			/*------*/
+			/*New Level*/
+			&.new-level
+				.row 
+					padding-top 30px
+					.img-preview
+						padding-top 15px
+			/*------*/
 			.content-form
 				padding-bottom 40px
 				.row 
 					padding-top 12px 
 					> div
-						height 80px 
-						label
+						min-height 80px 
+						label.label-floating
 							position absolute
 							top 26px
 							font-size 16px

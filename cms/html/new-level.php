@@ -25,44 +25,60 @@
 				<a href="#" class="btn-return"></a>
 				<h3 class="title-blue text-center">Nuevo Nivel</h3>
 			</div>
-			<form>
-				<div class="img-preview col-md-3">
-					<input type="file" id="files" />
-					<div class="img-container">
-						<img id="image" />
-					</div>
-					<div class="upload-btn">
-						<img src="img/ic-camera.png">
-						<span>Cargar imagen</span>
-					</div>
-				</div>
-				<div class="content-form col-md-9">
-					<div class="row">
-						<div class="col-md-6">
-							<label for="name" class="label-floating">Nivel</label>
-							<br>
-							<input type="text" name="name" required>
+			<form class="new-level">
+				<div class="row">
+					<div class="img-preview col-md-3">
+						<input type="file" id="files" />
+						<div class="img-container">
+							<img id="image" class="absolute-center" />
 						</div>
-						<div class="col-md-6">
-							<label for="lastname">Tipo</label>
-							<br>
-							<select name="status" required>
-								<option value="" selected=""></option>
-								<option value="activo">Activo</option>
-								<option value="inactivo">Inactivo</option>
-							</select>
+						<div class="upload-btn">
+							<img src="img/ic-camera.png">
+							<span>Cargar imagen</span>
 						</div>
-						<div class="col-md-3">
-							<label for="text" class="label-floating">Porcentaje</label>
-							<br>
-							<input type="email" name="email" required>
+					</div>
+					<div class="content-form col-md-9">
+						<div class="row">
+							<div class="col-md-6">
+								<label for="level" class="label-floating">Nivel</label>
+								<br>
+								<input type="number" name="level" required>
+							</div>
+							<div class="col-md-6">
+								<label for="type" class="label-floating">Tipo</label>
+								<br>
+								<select name="type" class="select-type" required>
+									<option value="" selected=""></option>
+									<option value="1">Porcentaje</option>
+									<option value="2">Rango</option>
+								</select>
+							</div>
+							<div class="col-md-3 input-type-percentage hidden">
+								<label for="percentage" class="label-floating">Porcentaje</label>
+								<br>
+								<input type="number" name="percentage">
+							</div>
+							<div class="col-md-6 input-type-rango hidden">
+								<label for="rango1" class="label-floating">Desde</label>
+								<br>
+								<input type="number" name="rango1">
+							</div>
+							<div class="col-md-6 input-type-rango hidden">
+								<label for="rango2" class="label-floating">Hasta</label>
+								<br>
+								<input type="number" name="rango2">
+							</div>
+							<div class="col-md-12 textarea-container">
+								<label class="btn-block text-blue">Descripción</label>
+								<textarea class="textarea"></textarea>
+							</div>
 						</div>
 					</div>
 				</div>
 
 				<div class="actions text-center">
 					<a onClick="history.go(-1);return true" class="btn-cancel text-uppercase">Cancelar</a>
-					<!-- <button type="submit" class="btn-save bg-green">Guardar</button> -->
+					<button type="submit" class="btn-save bg-green">Guardar</button>
 				</div>
 			</form>
 		</div>
@@ -70,5 +86,6 @@
 
 </section>
 <?php $script = "file-preview.js"; ?>
+<?php $script2 = "new-level.js"; ?>
 <?php $script3 = "administradores.js"; ?>
 <?php include 'includes/footer.php' ?>
