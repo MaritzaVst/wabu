@@ -303,11 +303,20 @@ input[type="password"]
 		/*Administradores form style*/
 		form 
 			padding 2em 10em 5em
-			&.new-level
+			&.new-level, &.user-registration
 				min-height calc(100vh - 200px)
 				display table
 				.actions
 					display: table-footer-group
+			&.user-registration
+				.img-preview 
+					text-align center
+					.img-container
+						width: 120px
+						height: 120px
+						border-radius: 100%
+						background-color: transparent
+						margin 0 auto
 			h4
 				font-weight 400 
 				text-transform uppercase
@@ -980,4 +989,16 @@ aside
 	li.cursos
 		background-image url('../img/ic_cursos.png')
 
+@media (min-width 1480px)
+	.main-content .data-list.admin-new >div form
+		width 1280px
+		margin 0 auto
+		&.user-registration
+			.img-preview
+				padding-left 70px
+				text-align left
+				.img-container
+					margin initial
+					
+				
 

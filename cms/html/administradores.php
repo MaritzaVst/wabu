@@ -35,7 +35,7 @@
 							<input type="text" name="name" required>
 						</div>
 						<div class="col-md-4">
-							<label for="lastname">Apellidos</label>
+							<label for="lastname" class="label-floating">Apellidos</label>
 							<br>
 							<input type="text" name="lastname" required>
 						</div>
