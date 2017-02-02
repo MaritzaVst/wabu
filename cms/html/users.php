@@ -99,7 +99,7 @@
 					</td>
 					<td></td>
 					<td>
-						<a href="#edit-universidad" onclick="set_current_id(15);" class="edit pop-edit-universidad"></a>
+						<a href="#edit-universidad" onclick="set_current_id(16);" class="edit pop-edit-universidad"></a>
 					</td>
 				</tr>
 
@@ -119,7 +119,7 @@
 					</td>
 					<td></td>
 					<td>
-						<a href="#edit-universidad" onclick="set_current_id(15);" class="edit pop-edit-universidad"></a>
+						<a href="#edit-universidad" onclick="set_current_id(17);" class="edit pop-edit-universidad"></a>
 					</td>
 				</tr>
 
