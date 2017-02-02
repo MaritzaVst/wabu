@@ -221,7 +221,7 @@ input[type="password"]
 					color #333
 					display block
 					position relative
-				a.edit, a.view
+				a.edit, a.view, a.download
 					display inline-block
 					padding .65em .5em
 					margin 0 .5em 0 0
@@ -230,6 +230,12 @@ input[type="password"]
 					background  url('../img/ic-left-standby.png') 50% 50% no-repeat
 				a.edit
 					background  url('../img/ic-edit-copy.png') 50% 50% no-repeat
+				a.download
+					background  url('../img/ic_cloud.png') 50% 50% no-repeat
+					position: absolute
+					right: 0px
+					top: -5px
+					padding: 1.65em 1em 
 				tr td
 					background-color: #FFF
 					margin-bottom 1em
@@ -249,6 +255,8 @@ input[type="password"]
 						background  url('../img/ic-edit.png') 50% 50% no-repeat
 					a.view 
 						background  url('../img/ic-left-hover.png') 50% 50% no-repeat
+					a.download
+						background  url('../img/ic_cloud_hover.png') 50% 50% no-repeat 
 				tr:hover td:last-child
 					a:after
 						background  url('../img/ic-left-hover.png') 50% 50% no-repeat

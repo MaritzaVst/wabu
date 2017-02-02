@@ -76,11 +76,10 @@
 					<td class="text-center ciclos">Contenido</td>
 					<td class="text-left ciclos">Althusser Competing Interpellations And The Third Text</td>
 					<td class="text-center ciclos">06/12/2016</td>
-					<td class="text-center ciclos">Desbloqueado</td>
-					<!-- <td>
-						<a href="#" class="edit"></a>
+					<td class="text-center ciclos">
+						Desbloqueado <a href="#" download class="download"></a>
 					</td>
- -->				</tr>
+				</tr>
 
 				<tr class="active" data-id="16" id="16">
 					<td class="text-left accion" >José Ernesto Meléndez Abarca</td>
@@ -89,11 +88,10 @@
 					<td class="text-center ciclos">Contenido</td>
 					<td class="text-left ciclos">Althusser Competing Interpellations And The Third Text</td>
 					<td class="text-center ciclos">06/12/2016</td>
-					<td class="text-center ciclos">Desbloqueado</td>
-					<!-- <td>
-						<a href="#" class="edit"></a>
+					<td class="text-center ciclos">
+						Desbloqueado <a href="#" download class="download"></a>
 					</td>
- -->				</tr>
+				</tr>
 
 				<tr class="active" data-id="17" id="17">
 					<td class="text-left accion" >José Ernesto Meléndez Abarca</td>
@@ -102,11 +100,10 @@
 					<td class="text-center ciclos">Contenido</td>
 					<td class="text-left ciclos">Althusser Competing Interpellations And The Third Text</td>
 					<td class="text-center ciclos">06/12/2016</td>
-					<td class="text-center ciclos">Desbloqueado</td>
-					<!-- <td>
-						<a href="#" class="edit"></a>
+					<td class="text-center ciclos">
+						Desbloqueado <a href="#" download class="download"></a>
 					</td>
- -->				</tr>
+				</tr>
 
 				<tr class="active" data-id="18" id="18">
 					<td class="text-left accion" >José Ernesto Meléndez Abarca</td>
@@ -115,11 +112,10 @@
 					<td class="text-center ciclos">Contenido</td>
 					<td class="text-left ciclos">Althusser Competing Interpellations And The Third Text</td>
 					<td class="text-center ciclos">06/12/2016</td>
-					<td class="text-center ciclos">Desbloqueado</td>
-					<!-- <td>
-						<a href="#" class="edit"></a>
+					<td class="text-center ciclos">
+						Desbloqueado <a href="#" download class="download"></a>
 					</td>
- -->				</tr>
+				</tr>
 			</tbody>
 		</table>
 
