@@ -309,6 +309,15 @@ input[type="password"]
 				width 5%
 			&.accion
 				padding-left 55px!important
+	.data-list.spam
+		font-size: 0.9em  
+		table  
+			tbody tr td
+				width 13%!important
+				font-weight 400
+				padding-right 1em
+			thead tr th 
+				text-align center !important 
 	.data-list.admin-new > div 
 		border-radius 4px
 		background-color #ffffff
@@ -598,16 +607,17 @@ input[type="password"]
 			display block
 /*Popup*/
 .pop-ups 
-	min-height 250px
+	min-height auto
 	min-width 520px;
+	display table
 	.heading 
-		font-size 1.8em 
+		font-size 20px 
 		color #1283ff
 		border-bottom 2px solid rgba(0, 0, 0, .15)
 		text-transform: uppercase;
-		font-size 1.3em
 		text-align center
 		padding: .35em 0;
+		display block
 	.body 
 		text-align center
 		padding: 2em 0;
@@ -634,6 +644,10 @@ input[type="password"]
 			padding 1.15em 0 .5em
 			border-radius 0
 			color #cacaca
+.spam-boxes
+	.pop-ups
+		.actions
+			display table-footer-group
 	form
 		input, select, textarea
 			border 0
@@ -908,7 +922,7 @@ input[type="password"]
 	cursor: pointer;
 
 /*Buttons*/
-.btn-disable, .btn-new, .btn-active, .btn-upload
+.btn-disable, .btn-new, .btn-active, .btn-upload, .btn-filter
 	padding 0 2em
 	padding-top 2.5em 
 	border 0
@@ -928,9 +942,11 @@ input[type="password"]
 .btn-new
 	background  url('../img/ic-add.png') 50% 0  no-repeat	
 .btn-upload
-	background  url('../img/ic_upload.png') 50% 0  no-repeat	
+	background  url('../img/ic_upload.png') 50% 0  no-repeat
+.btn-filter
+	background  url('../img/ic_filter.png') 50% 0  no-repeat		
 .sep 
-	border-right 1px solid rgba(0, 0, 0, .15)
+	border-right 1px solid rgba(0, 0, 0, .15)7
 /*Header main-content*/
 header
 	background-color: #FFF
