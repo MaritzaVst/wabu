@@ -17,20 +17,6 @@
 		<h2 class="title">Puntajes</h2>
 
 		<div class="actions">
-			<!--Buttons-->
-			<a href="#nueva-carrera" class="btn-upload pull-right disabled">
-				CARGAR
-			</a>
-			<a href="#nueva-carrera" class="btn-new pull-right pop-nueva-carrera">
-				NUEVO
-			</a>
-			<a href="#desactivar" class="btn-disable pull-right sep pop-desactivar disabled">
-				DESACTIVAR
-			</a>
-			<a href="#activar" class="btn-active pull-right sep pop-activar disabled">
-				ACTIVAR
-			</a>
-			<!---->
 			<form action="#" method="get" class="search-form" data-parsley-validate="">
 				
 				<button type="submit"></button>
