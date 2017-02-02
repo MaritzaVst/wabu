@@ -51,7 +51,7 @@
 						</div>
 						<div class="col-md-4">
 							<label for="status" class="label-floating select-label">Estado</label>
-							<img src="img/ic-down.png">
+							<img src="img/ic-down.png" class="ic-down">
 							<br>
 							<select name="status" required>
 								<option value="" selected=""></option>

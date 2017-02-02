@@ -51,13 +51,18 @@ input
 		font-size 13px
 		font-weight 400!important
 		padding-top 5px
-.absolute-center
+.absolute-center 
 	position: absolute
 	transform: translate(-50%, -50%)
 	top: 50%
 	left: 50%
 .btn-block 
 	display block
+.border-gray
+	border-radius 8px
+	border solid 1px #d3d3d3
+.text-uppercase
+	text-transform uppercase
 /*Errors messages*/
 .parsley-errors-list
 	display none
@@ -317,6 +322,45 @@ input[type="password"]
 						border-radius: 100%
 						background-color: transparent
 						margin 0 auto
+				.user-information
+					padding 10px 30px 0
+					position relative
+					.row > div
+						min-height 70px
+						.ic-down
+							bottom 30px
+						.ic-calendar
+							bottom 26px
+							left auto
+							right 10%
+					.btn-delete
+						position: absolute
+						right: 5px
+						top: 5px
+						cursor pointer
+				.add-information
+					padding-top 20px
+					cursor pointer
+					display inline-block
+					span
+						line-height 3.67
+						letter-spacing 0.3px
+						color #9b9b9b
+						font-size 12px
+						padding-left 10px
+				.btn-restrict-date
+					margin-top -20px
+					label
+						line-height 0
+						input:before
+							top -1px
+							left auto
+						span
+							padding-left 25px
+							float left
+							line-height 0.5
+							color #9b9b9b
+							font-size 12px
 			h4
 				font-weight 400 
 				text-transform uppercase
@@ -376,6 +420,9 @@ input[type="password"]
 			/*------*/
 			.content-form
 				padding-bottom 40px
+				border-bottom solid 1px #1183ff42
+				&:nth-last-child(2)
+					border-bottom transparent
 				.row 
 					padding-top 12px 
 					> div
@@ -431,14 +478,16 @@ input[type="password"]
 							appearance: none
 							option:first-child
 								display none
-						img 
+						input.datetimeurl
+							background-image url("../img/ic_calendar.png") no-repeat
+						img.ic-down, .ic-calendar 
 							position: absolute
 							bottom: 40px
 							left: 235px
-				
-				/*Administradores*/
-				&.personal-information, &.universidad
-					border-bottom solid 1px #1183ff42
+						&.col-md-2
+							input
+								width 100%
+				/*Administradores*/	
 				&.personal-information
 				&.universidad
 					ul.token-input-list
@@ -493,19 +542,19 @@ input[type="password"]
 						font-size 16px
 						padding-bottom 17px
 						padding-left 50px
-						input
-							height 0px
-							width 0px
-							position absolute 
-							&:before
-								content url('../img/unchecked.png')
-								top 3px
-								left -28px
-								position absolute 
-								cursor pointer
-							&.checked
-								&:before
-									content url('../img/checked.png')
+				input[type="checkbox"]
+					height 0px
+					width 0px
+					position absolute 
+					&:before
+						content url('../img/unchecked.png')
+						top 3px
+						left -28px
+						position absolute 
+						cursor pointer
+					&.checked
+						&:before
+							content url('../img/checked.png')
 				&.permisos, &.universidad 
 					padding-top 15px
 			.actions
@@ -988,7 +1037,12 @@ aside
 		background-image url('../img/ic_carreras.png')
 	li.cursos
 		background-image url('../img/ic_cursos.png')
-
+@media (min-width 780px) and (max-width 1480px)
+	.main-content .data-list.admin-new >div form
+		.work-info .row > div
+			width 25%
+			input
+				width 100%
 @media (min-width 1480px)
 	.main-content .data-list.admin-new >div form
 		width 1280px

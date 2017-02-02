@@ -27,122 +27,183 @@
 			</div>
 			<form class="new-level user-registration">
 				<h4>Información Personal</h4>
-				<div class="row">
-					<div class="img-preview col-md-4">
-						<input type="file" id="files" />
-						<div class="img-container">
-							<img id="image" class="absolute-center" src="img/default.png"/>
+				<div class="content-form">
+					<div class="row">
+						<div class="img-preview col-md-4">
+							<input type="file" id="files" />
+							<div class="img-container">
+								<img id="image" class="absolute-center" src="img/default.png"/>
+							</div>
+							<div class="upload-btn">
+								<img src="img/ic-camera.png">
+								<span>Cargar imagen</span>
+							</div>
 						</div>
-						<div class="upload-btn">
-							<img src="img/ic-camera.png">
-							<span>Cargar imagen</span>
-						</div>
-					</div>
-					<div class="content-form col-md-8">
-						<div class="row">
-							<div class="col-md-6">
-								<label for="name" class="label-floating">Nombres</label>
-								<br>
-								<input type="text" name="name" required>
-							</div>
-							<div class="col-md-6">
-								<label for="lastname" class="label-floating">Apellidos</label>
-								<br>
-								<input type="text" name="lastname" required>
-							</div>
-							<div class="col-md-6">
-								<label for="nacimiento" class="label-floating">Fecha de Nacimieto</label>
-								<br>
-								<input type="text" name="nacimiento" required>
-							</div>
-							<div class="col-md-6">
-								<label for="type" class="label-floating">Sexo</label>
-								<br>
-								<select name="type" class="select-type" required>
-									<option value="" selected=""></option>
-									<option value="1">Femenino</option>
-									<option value="2">Masculino</option>
-									<option value="3">Otros</option>
-								</select>
-							</div>
-							<div class="col-md-6">
-								<label for="email" class="label-floating">Correo personal</label>
-								<br>
-								<input type="email" name="email" required>
-							</div>
-							<div class="col-md-6">
-								<label for="email universitario" class="label-floating">Correo de la Universidad</label>
-								<br>
-								<input type="email" name="email universitario" required>
-							</div>
-							<div class="col-md-6">
-								<label for="departamento" class="label-floating">Departamento</label>
-								<br>
-								<select name="departamento" class="select-type" required>
-									<option value="" selected=""></option>
-									<option value="1">Lima</option>
-									<option value="2">Ayacucho</option>
-									<option value="3">Loreto</option>
-								</select>
-							</div>
-							<div class="col-md-6">
-								<label for="provincia" class="label-floating">Provincia</label>
-								<br>
-								<select name="provincia" class="select-type" required>
-									<option value="" selected=""></option>
-									<option value="1">Lima</option>
-									<option value="2">Ayacucho</option>
-									<option value="3">Loreto</option>
-								</select>
-							</div>
-							<div class="col-md-6">
-								<label for="distrito" class="label-floating">Distrito</label>
-								<br>
-								<select name="provincia" class="select-type" required>
-									<option value="" selected=""></option>
-									<option value="1">Lima</option>
-									<option value="2">Ayacucho</option>
-									<option value="3">Loreto</option>
-								</select>
-							</div>
-							<div class="col-md-6">
-								<label for="direccion" class="label-floating">Dirección</label>
-								<br>
-								<input type="text" name="direccion" required>
+						<div class="col-md-8">
+							<div class="row">
+								<div class="col-md-6">
+									<label for="name" class="label-floating">Nombres</label>
+									<br>
+									<input type="text" name="name" required>
+								</div>
+								<div class="col-md-6">
+									<label for="lastname" class="label-floating">Apellidos</label>
+									<br>
+									<input type="text" name="lastname" required>
+								</div>
+								<div class="col-md-6">
+									<label for="nacimiento" class="label-floating">Fecha de Nacimieto</label>
+									<img src="img/ic_calendar.png" class="ic-calendar">
+									<br>
+									<input type="text" name="nacimiento" required class="datetime">
+								</div>
+								<div class="col-md-6">
+									<label for="type" class="label-floating">Sexo</label>
+									<img src="img/ic-down.png" class="ic-down">
+									<br>
+									<select name="type" class="select-type" required>
+										<option value="" selected=""></option>
+										<option value="1">Femenino</option>
+										<option value="2">Masculino</option>
+										<option value="3">Otros</option>
+									</select>
+								</div>
+								<div class="col-md-6">
+									<label for="email" class="label-floating">Correo personal</label>
+									<br>
+									<input type="email" name="email" required>
+								</div>
+								<div class="col-md-6">
+									<label for="email universitario" class="label-floating">Correo de la Universidad</label>
+									<br>
+									<input type="email" name="email universitario" required>
+								</div>
+								<div class="col-md-6">
+									<label for="departamento" class="label-floating">Departamento</label>
+									<img src="img/ic-down.png" class="ic-down">
+									<br>
+									<select name="departamento" class="select-type" required>
+										<option value="" selected=""></option>
+										<option value="1">Lima</option>
+										<option value="2">Ayacucho</option>
+										<option value="3">Loreto</option>
+									</select>
+								</div>
+								<div class="col-md-6">
+									<label for="provincia" class="label-floating">Provincia</label>
+									<img src="img/ic-down.png" class="ic-down">
+									<br>
+									<select name="provincia" class="select-type" required>
+										<option value="" selected=""></option>
+										<option value="1">Lima</option>
+										<option value="2">Ayacucho</option>
+										<option value="3">Loreto</option>
+									</select>
+								</div>
+								<div class="col-md-6">
+									<label for="distrito" class="label-floating">Distrito</label>
+									<img src="img/ic-down.png" class="ic-down">
+									<br>
+									<select name="provincia" class="select-type" required>
+										<option value="" selected=""></option>
+										<option value="1">Lima</option>
+										<option value="2">Ayacucho</option>
+										<option value="3">Loreto</option>
+									</select>
+								</div>
+								<div class="col-md-6">
+									<label for="direccion" class="label-floating">Dirección</label>
+									<br>
+									<input type="text" name="direccion" required>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<h4>Información Académica</h4>
 				<div class="content-form">
-					<div>
-						<label for="carrera" class="label-floating">Distrito</label>
-						<select name="carrera" class="select-type" required>
-							<option value="" selected=""></option>
-							<option value="1">Administración</option>
-							<option value="2">Sistemas</option>
-							<option value="3">Comunicación</option>
-						</select>
-						<label for="ciclo" class="label-floating">Distrito</label>
-						<select name="ciclo" class="select-type" required>
-							<option value="" selected=""></option>
-							<option value="1">Administración</option>
-							<option value="2">Sistemas</option>
-							<option value="3">Comunicación</option>
-						</select>
-						<label for="posicion" class="label-floating">Distrito</label>
-						<select name="posicion" class="select-type" required>
-							<option value="" selected=""></option>
-							<option value="1">Administración</option>
-							<option value="2">Sistemas</option>
-							<option value="3">Comunicación</option>
-						</select>
+					<div class="border-gray user-information academic-info">
+						<div class="row">
+							<div class="col-md-4">
+								<label for="carrera" class="label-floating">Carrera</label>
+								<img src="img/ic-down.png" class="ic-down">
+								<br>
+								<select name="carrera" class="select-type" required>
+									<option value="" selected=""></option>
+									<option value="1">Administración</option>
+									<option value="2">Sistemas</option>
+									<option value="3">Comunicación</option>
+								</select>
+							</div>
+							<div class="col-md-4">
+								<label for="ciclo" class="label-floating">Ciclo</label>
+								<img src="img/ic-down.png" class="ic-down">
+								<br>
+								<select name="ciclo" class="select-type" required>
+									<option value="" selected=""></option>
+									<option value="1">Ciclo I</option>
+									<option value="2">Ciclo II</option>
+									<option value="3">Ciclo III</option>
+								</select>
+							</div>
+							<div class="col-md-4">
+								<label for="posicion" class="label-floating">Posición Académica</label>
+								<img src="img/ic-down.png" class="ic-down">
+								<br>
+								<select name="posicion" class="select-type" required>
+									<option value="" selected=""></option>
+									<option value="1">Tercio Superior</option>
+									<option value="2">Quinto Superior</option>
+									<option value="3">Decimo Superior (?)</option>
+								</select>
+							</div>
+							<span class="btn-delete"><img src="img/ic-delete.png"></span>
+						</div>
 					</div>
-					<span class="btn-new"></span>
+					<div class="add-information">
+						<img src="img/ic-add.png">
+						<span class="text-uppercase">Agregar carrera</span>
+					</div>
 				</div>
 				<h4>Información Laboral</h4>
 				<div class="content-form">
-						
+					<div class="border-gray user-information work-info">
+						<div class="row">
+							<div class="col-md-4">
+								<label for="empresa" class="label-floating">Empresa</label>
+								<br>
+								<input type="text" name="empresa" required>
+							</div>
+							<div class="col-md-4">
+								<label for="puesto" class="label-floating">Puesto</label>
+								<br>
+								<input type="text" name="puesto" required>
+							</div>
+							<div class="col-md-2">
+								<label for="inicio" class="label-floating">Fecha de Inicio</label>
+								<img src="img/ic_calendar.png" class="ic-calendar">
+								<br>
+								<input type="text" name="inicio" required class="datetime">
+							</div>
+							<div class="col-md-2">
+								<label for="fin" class="label-floating">Fecha de Fin</label>
+								<img src="img/ic_calendar.png" class="ic-calendar">
+								<br>
+								<input type="text" name="fin" required class="datetime">
+							</div>
+							<div class="col-md-2 col-lg-offset-10 btn-restrict-date">
+								<label for="actual-date">
+									<input type="checkbox" name="actual-date">
+									<span class="text-uppercase">Actualidad</span>
+								</label>
+							</div>
+							<span class="btn-delete"><img src="img/ic-delete.png"></span>
+						</div>
+					</div>
+					<div class="add-information">
+						<img src="img/ic-add.png">
+						<span class="text-uppercase">Agregar información adicional</span>
+					</div>
 				</div>
 				<div class="actions text-center">
 					<a onClick="history.go(-1);return true" class="btn-cancel text-uppercase">Cancelar</a>

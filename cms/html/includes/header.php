@@ -14,7 +14,8 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <link rel="stylesheet" href="js/vendor/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
         <script type="text/javascript" src="js/vendor/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-        
+        <!-- Datetime -->
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     </head>
 
     <body>
