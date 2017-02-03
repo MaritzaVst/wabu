@@ -169,28 +169,28 @@
 		<div class="content-form floating-effect">
 			<div class="row">
 				<div class="col-md-12">
-					<label for="departamento" class="label-floating">Tipo</label>
+					<label for="type" class="label-floating">Tipo</label>
 					<img src="img/ic-down.png" class="ic-down">
 					<br>
-					<select name="departamento" class="select-type" required>
+					<select name="type" class="select-type" required>
 						<option value="" selected=""></option>
-						<option value="1">Contenido</option>
-						<option value="2">Comentario</option>
+						<option value="content">Contenido</option>
+						<option value="comment">Comentario</option>
 					</select>
 				</div>
 				<div class="col-md-12">
-					<label for="departamento" class="label-floating">Estado</label>
+					<label for="status" class="label-floating">Estado</label>
 					<img src="img/ic-down.png" class="ic-down">
 					<br>
-					<select name="departamento" class="select-type" required>
+					<select name="status" class="select-status" required>
 						<option value="" selected=""></option>
-						<option value="1">Bloqueado</option>
-						<option value="2">Desbloqueado</option>
+						<option value="locked">Bloqueado</option>
+						<option value="unlocked">Desbloqueado</option>
 					</select>
 				</div>
 			</div>
 			<div class="actions">
-				<div class="btn-save bg-green">FILTRAR</div>
+				<div class="btn-save btn-filter-spam bg-green">FILTRAR</div>
 			</div>
 		</div>
 	</div>

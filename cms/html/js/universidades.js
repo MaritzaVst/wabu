@@ -235,9 +235,29 @@ function set_current_id(id){
 	current_id_universidad = id;
 }
 
-/*Filtrar spam*/
+/*Muestra form de filtro*/
 $("a.btn-filter").click(function(e){
 	e.preventDefault();
 	$("#filtrar").toggleClass("hidden");
 });
+/*Filtrar spam*/
+$(".btn-filter-spam").on("click", function(){
+	$("#filtrar").addClass("hidden");
+	// var type = $(".select-type").val(),
+	// 	status = $(".select-status").val();
+	// /*Verifica tipo */
+	// if(type == "content") {
+	// 	if ($("td[data='type']").html().toLowerCase() == "contenido") {
+	// 	} else {
 
+	// 	}
+	// }
+	// /*Verifica contenido*/
+	// if(status == "locked") {
+	// 	if ($("td[data='status']").html().toLowerCase() == "desbloqueado") {
+
+	// 	} else {
+
+	// 	}
+	// }
+});

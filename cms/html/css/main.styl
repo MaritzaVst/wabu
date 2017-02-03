@@ -383,6 +383,16 @@ input[type="password"]
 			width auto
 			text-align center
 	.data-list.puntajes
+		.content-form input
+			width 60px
+			text-align center
+			&::-webkit-inner-spin-button
+			&::-webkit-outer-spin-button
+				-moz-appearance: none
+				-webkit-appearance: none
+				appearance: none
+			&.disabled
+				background-image none
 		th:first-child
 			padding-left 130px
 		td
@@ -391,6 +401,10 @@ input[type="password"]
 				width 5%
 			&.accion
 				padding-left 55px!important
+		.actions
+			margin-top 70px
+			a 
+				text-decoration none
 	.data-list.spam
 		font-size: 0.9em  
 		table  

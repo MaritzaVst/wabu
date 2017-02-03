@@ -28,58 +28,78 @@
 	</header><!-- /header -->
 
 	<section class="data-list profesores carreras puntajes">
+		<form>
+			<table cellspacing="50">
+				<thead>
+					<tr>
+						<th>
+							Acción
+						</th>
+						<th>
+							Puntaje
+						</th>
+						<th>
+							&nbsp;
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="active">
+						<td class="text-left accion" >Usuario que califica contenido gana</td>
+						<td class="text-center">
+							<div class="content-form floating-effect">
+								<input type="number" name="points" value="50" class="disabled" disabled>
+							</div>
+						</td>
+						<td>
+							<a href="#" class="edit"></a>
+						</td>
+					</tr>
 
-		<table cellspacing="50">
-			<thead>
-				<tr>
-					<th>
-						Acción
-					</th>
-					<th>
-						Puntaje
-					</th>
-					<th>
-						&nbsp;
-					</th>
-				</tr>
-			</thead>
-			<tbody>
+					<tr class="active">
+						<td class="text-left accion" >Cada vez que califiquen su contenido, el usuario gana</td>
+						<td class="text-center">
+							<div class="content-form floating-effect">
+								<input type="number" name="points2" value="50" class="disabled" disabled>
+							</div>
+						</td>
+						<td>
+							<a href="#" class="edit"></a>
+						</td>
+					</tr>
 
-				<tr class="active" data-id="15" id="15">
-					<td class="text-left accion" >Usuario que califica contenido gana</td>
-					<td class="text-center ciclos">50</td>
-					<td>
-						<a href="#" class="edit"></a>
-					</td>
-				</tr>
+					<tr class="active">
+						<td class="text-left accion" >Usuario que califica a un profesor gana</td>
+						<td class="text-center">
+							<div class="content-form floating-effect">
+								<input type="number" name="points3" value="50" class="disabled" disabled>
+							</div>
+						</td>
+						<td>
+							<a href="#" class="edit"></a>
+						</td>
+					</tr>
 
-				<tr class="active" data-id="16" id="16">
-					<td class="text-left accion" >Cada vez que califiquen su contenido, el usuario gana</td>
-					<td class="text-center ciclos">50</td>
-					<td>
-						<a href="#" class="edit"></a>
-					</td>
-				</tr>
-
-				<tr class="active" data-id="17" id="17">
-					<td class="text-left accion" >Usuario que califica a un profesor gana</td>
-					<td class="text-center ciclos">50</td>
-					<td>
-						<a href="#" class="edit"></a>
-					</td>
-				</tr>
-
-				<tr class="active" data-id="18" id="18">
-					<td class="text-left accion" >Usuario que comenta a un profesor gana (Cuando califica o después)</td>
-					<td class="text-center ciclos">50</td>
-					<td>
-						<a href="#" class="edit"></a>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-
+					<tr class="active">
+						<td class="text-left accion" >Usuario que comenta a un profesor gana (Cuando califica o después)</td>
+						<td class="text-center">
+							<div class="content-form floating-effect">
+								<input type="number" name="points4" value="50" class="disabled" disabled>
+							</div>
+						</td>
+						<td>
+							<a href="#" class="edit"></a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="actions text-center">
+				<a class="btn-cancel text-uppercase">Cancelar</a>
+				<button type="submit" class="btn-save bg-green">Guardar</button>
+			</div>
+		</form>
 	</section>
+	
 </section>
-
+<?php $script = "puntajes.js"?>
 <?php include 'includes/footer.php' ?>
