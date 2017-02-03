@@ -32,7 +32,7 @@
 			<form action="#" method="get" class="search-form" data-parsley-validate="">
 				
 				<button type="submit"></button>
-				<input type="text" name="search" required placeholder="Buscar universidad">
+				<input type="text" name="search" required placeholder="Buscar Spam">
 
 			</form>
 
@@ -40,7 +40,7 @@
 	</header><!-- /header -->
 
 	<section class="data-list spam">
-		<div class="btn-select-all"></div>
+		<div class="btn-select-all toggle-button"></div>
 		<table cellspacing="50">
 			<thead>
 				<tr>
@@ -148,7 +148,7 @@
 				Activar Universidad
 			</div>
 			<div class="body">
-				<p>¿Está seguro que desea activar a <br>la siguiente Universidad?</p>
+				<p>¿Está seguro que desea activar este comentario?</p>
 				<h3 class="title"></h3>
 				<p><small>Al activar se mostrará en el aplicativo</small></p>
 

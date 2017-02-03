@@ -66,6 +66,13 @@ input
 	border solid 1px #d3d3d3
 .text-uppercase
 	text-transform uppercase
+
+/*Checked - unchecked*/
+.toggle-button
+	&:before
+		content: url("../img/unchecked.png")
+	&.select
+		content: url("../img/checked.png")
 /*Errors messages*/
 .parsley-errors-list
 	display none
@@ -272,10 +279,6 @@ input[type="password"]
 			top 35px
 			left 30px
 			cursor pointer
-			&:before
-				content: url("../img/unchecked.png")
-			&.select
-				content: url("../img/checked.png")
 		table 
 			width 100%
 			border-collapse: separate;
@@ -608,6 +611,11 @@ input[type="password"]
 					input
 						width 80px
 						text-align right
+						&::-webkit-inner-spin-button
+						&::-webkit-outer-spin-button
+							-moz-appearance: none
+							-webkit-appearance: none
+							appearance: none
 					span
 						padding-left 0
 						line-height 2.25
@@ -1193,6 +1201,12 @@ aside
 		background-image url('../img/ic_carreras.png')
 	li.cursos
 		background-image url('../img/ic_cursos.png')
+	li.cupones
+		background-image url('../img/ic_cupones.png') 
+	li.premios
+		background-image url('../img/ic_premios.png')
+	li.spam
+		background-image url('../img/ic_spam.png')
 @media (min-width 780px) and (max-width 1480px)
 	.main-content .data-list.admin-new >div form
 		.work-info .row > div

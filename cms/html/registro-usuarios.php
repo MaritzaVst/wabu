@@ -193,7 +193,7 @@
 							</div>
 							<div class="col-md-2 col-lg-offset-10 btn-restrict-date">
 								<label for="actual-date">
-									<input type="checkbox" name="actual-date">
+									<input type="checkbox" name="actual-date" class="toggle-button">
 									<span class="text-uppercase">Actualidad</span>
 								</label>
 							</div>
