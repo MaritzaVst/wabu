@@ -40,7 +40,7 @@
 	</header><!-- /header -->
 
 	<section class="data-list spam">
-
+		<div class="btn-select-all"></div>
 		<table cellspacing="50">
 			<thead>
 				<tr>

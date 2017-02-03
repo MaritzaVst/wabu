@@ -209,6 +209,72 @@
 					<a onClick="history.go(-1);return true" class="btn-cancel text-uppercase">Cancelar</a>
 					<button type="submit" class="btn-save bg-green">Guardar</button>
 				</div>
+				<h4>Datos del sistema</h4>
+				<div class="content-form">
+					<div class="row">
+						<div class="col-md-4">
+							<label for="carrera" class="label-floating">Validado</label>
+							<img src="img/ic-down.png" class="ic-down">
+							<br>
+							<select name="carrera" class="select-type" required>
+								<option value="" selected=""></option>
+								<option value="1">Si</option>
+								<option value="2">No</option>
+							</select>
+						</div>
+						<div class="col-md-4">
+							<label for="ciclo" class="label-floating">Estado</label>
+							<img src="img/ic-down.png" class="ic-down">
+							<br>
+							<select name="ciclo" class="select-type" required>
+								<option value="" selected=""></option>
+								<option value="1">Activo</option>
+								<option value="2">Desactivado</option>
+							</select>
+						</div>
+					</div>
+					<h5>Puntaje ganado por acciones</h5>
+					<div class="row scores">
+						<div class="col-md-6">
+							<label class="clearfix">
+								<span class="col-md-9">Calificar Contenido</span>
+								<input type="number" name="puntaje 1">
+							</label>
+							<label class="clearfix">
+								<span class="col-md-9">Calificaron su contenido</span>
+								<input type="number" name="puntaje 2">
+							</label>
+							<label class="clearfix">
+								<span class="col-md-9">Calificar Profesor</span>
+								<input type="number" name="puntaje 3">
+							</label>
+							<label class="clearfix">
+								<span class="col-md-9">Comentar Profesor</span>
+								<input type="number" name="puntaje 4">
+							</label>
+							<label class="clearfix">
+								<span class="col-md-9">Publicar Contenido</span>
+								<input type="number" name="puntaje 5">
+							</label>
+							<label class="clearfix">
+								<span class="col-md-9">Juego de Preguntas</span>
+								<input type="number" name="puntaje 7">
+							</label>
+							<label class="clearfix">
+								<span class="col-md-9">Validar Cuenta</span>
+								<input type="number" name="puntaje 8">
+							</label>
+							<label class="clearfix">
+								<span class="col-md-9">Spam Comentario</span>
+								<input type="number" name="puntaje 9">
+							</label>
+							<label class="clearfix">
+								<span class="col-md-9">Enviaron su contenido por correo</span>
+								<input type="number" name="puntaje 6">
+							</label>
+						</div>
+					</div>
+				</div>
 			</form>
 		</div>
 	</section>

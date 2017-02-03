@@ -37,6 +37,14 @@ function reload_events(){
 			}
 
 		})
+		/*Selecciona todas las filas*/
+		$(".btn-select-all").on("click", function(){
+			$(this).toggleClass("select");
+			if($("tr.current").length == 1) {
+				$(".data-list table tbody tr").removeClass("current");
+			}
+			$(".data-list table tbody tr").toggleClass("current");
+		});
 	}
 
 }

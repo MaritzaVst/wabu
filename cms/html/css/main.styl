@@ -198,10 +198,20 @@ input[type="password"]
 .main-content
 	float left 
 	width 85%
-	background-color: #ececf5;
+	background-color: #ececf5
 	/*Listado*/
 	.data-list 
 		padding 2em
+		position relative 
+		div.btn-select-all
+			position absolute
+			top 35px
+			left 30px
+			cursor pointer
+			&:before
+				content: url("../img/unchecked.png")
+			&.select
+				content: url("../img/checked.png")
 		table 
 			width 100%
 			border-collapse: separate;
@@ -393,6 +403,9 @@ input[type="password"]
 				font-size 13px
 				color rgb(18, 131, 255)
 				letter-spacing 0.3px
+				padding-top: 23px;
+				&:first-child
+					padding-top 0
 				
 			/*General*/
 			.textarea-container
@@ -447,7 +460,7 @@ input[type="password"]
 			.content-form
 				padding-bottom 40px
 				border-bottom solid 1px #1183ff42
-				&:nth-last-child(2)
+				&:nth-last-child(2), &:nth-last-child(1)
 					border-bottom transparent
 				.row 
 					padding-top 12px 
@@ -513,6 +526,16 @@ input[type="password"]
 						&.col-md-2
 							input
 								width 100%
+				.row.scores
+					input
+						width 80px
+						text-align right
+					span
+						padding-left 0
+						line-height 2.25
+						letter-spacing 0.3px
+						color #5a6066
+						font-size 16px
 				/*Administradores*/	
 				&.personal-information
 				&.universidad
