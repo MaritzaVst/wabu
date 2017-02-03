@@ -19,7 +19,7 @@
 
 		<div class="actions">
 			<!--Buttons-->
-			<a href="#nueva-universidad" class="btn-filter pull-right pop-nueva-universidad">
+			<a href="#filtrar" class="btn-filter pull-right">
 				FILTRAR
 			</a>
 			<a href="#desactivar" class="btn-disable pull-right sep pop-desactivar disabled">
@@ -71,48 +71,48 @@
 
 				<tr class="active" data-id="15" id="15">
 					<td class="text-left accion" >José Ernesto Meléndez Abarca</td>
-					<td class="text-left ciclos">Catalina Leonor Ruiz de las Casas50</td>
-					<td class="text-center ciclos">Copyright</td>
-					<td class="text-center ciclos">Contenido</td>
-					<td class="text-left ciclos">Althusser Competing Interpellations And The Third Text</td>
-					<td class="text-center ciclos">06/12/2016</td>
-					<td class="text-center ciclos">
+					<td class="text-left">Catalina Leonor Ruiz de las Casas50</td>
+					<td class="text-center">Copyright</td>
+					<td class="text-center" data="type">Contenido</td>
+					<td class="text-left">Althusser Competing Interpellations And The Third Text</td>
+					<td class="text-center">06/12/2016</td>
+					<td class="text-center" data="status">
 						Desbloqueado <a href="#" download class="download"></a>
 					</td>
 				</tr>
 
 				<tr class="active" data-id="16" id="16">
 					<td class="text-left accion" >José Ernesto Meléndez Abarca</td>
-					<td class="text-left ciclos">Catalina Leonor Ruiz de las Casas50</td>
-					<td class="text-center ciclos">--</td>
-					<td class="text-center ciclos">Contenido</td>
-					<td class="text-left ciclos">Althusser Competing Interpellations And The Third Text</td>
-					<td class="text-center ciclos">06/12/2016</td>
-					<td class="text-center ciclos">
+					<td class="text-left">Catalina Leonor Ruiz de las Casas50</td>
+					<td class="text-center">--</td>
+					<td class="text-center" data="type">Contenido</td>
+					<td class="text-left">Althusser Competing Interpellations And The Third Text</td>
+					<td class="text-center">06/12/2016</td>
+					<td class="text-center" data="status">
 						Desbloqueado <a href="#" download class="download"></a>
 					</td>
 				</tr>
 
 				<tr class="active" data-id="17" id="17">
 					<td class="text-left accion" >José Ernesto Meléndez Abarca</td>
-					<td class="text-left ciclos">Catalina Leonor Ruiz de las Casas50</td>
-					<td class="text-center ciclos">Copyright</td>
-					<td class="text-center ciclos">Contenido</td>
-					<td class="text-left ciclos">Althusser Competing Interpellations And The Third Text</td>
-					<td class="text-center ciclos">06/12/2016</td>
-					<td class="text-center ciclos">
+					<td class="text-left">Catalina Leonor Ruiz de las Casas50</td>
+					<td class="text-center">Copyright</td>
+					<td class="text-center" data="type">Contenido</td>
+					<td class="text-left">Althusser Competing Interpellations And The Third Text</td>
+					<td class="text-center">06/12/2016</td>
+					<td class="text-center" data="status">
 						Desbloqueado <a href="#" download class="download"></a>
 					</td>
 				</tr>
 
 				<tr class="active" data-id="18" id="18">
 					<td class="text-left accion" >José Ernesto Meléndez Abarca</td>
-					<td class="text-left ciclos">Catalina Leonor Ruiz de las Casas50</td>
-					<td class="text-center ciclos">Copyright</td>
-					<td class="text-center ciclos">Contenido</td>
-					<td class="text-left ciclos">Althusser Competing Interpellations And The Third Text</td>
-					<td class="text-center ciclos">06/12/2016</td>
-					<td class="text-center ciclos">
+					<td class="text-left">Catalina Leonor Ruiz de las Casas50</td>
+					<td class="text-center">Copyright</td>
+					<td class="text-center" data="type">Contenido</td>
+					<td class="text-left">Althusser Competing Interpellations And The Third Text</td>
+					<td class="text-center">06/12/2016</td>
+					<td class="text-center" data="status">
 						Desbloqueado <a href="#" download class="download"></a>
 					</td>
 				</tr>
@@ -120,6 +120,7 @@
 		</table>
 
 	</section>
+	
 	<!--Popups: Desactivar, Nuevo -->
 	<section class="hidden boxes spam-boxes">
 		<!-- Desactivar -->
@@ -161,6 +162,39 @@
 			</div>
 		</div>
 	</section>
+
+	<!--Filtrar-->
+	<div id="filtrar" class="hidden">
+		<h4 class="text-uppercase">Filtrar</h4>
+		<div class="content-form floating-effect">
+			<div class="row">
+				<div class="col-md-12">
+					<label for="departamento" class="label-floating">Tipo</label>
+					<img src="img/ic-down.png" class="ic-down">
+					<br>
+					<select name="departamento" class="select-type" required>
+						<option value="" selected=""></option>
+						<option value="1">Contenido</option>
+						<option value="2">Comentario</option>
+					</select>
+				</div>
+				<div class="col-md-12">
+					<label for="departamento" class="label-floating">Estado</label>
+					<img src="img/ic-down.png" class="ic-down">
+					<br>
+					<select name="departamento" class="select-type" required>
+						<option value="" selected=""></option>
+						<option value="1">Bloqueado</option>
+						<option value="2">Desbloqueado</option>
+					</select>
+				</div>
+			</div>
+			<div class="actions">
+				<div class="btn-save bg-green">FILTRAR</div>
+			</div>
+		</div>
+	</div>
 </section>
 <?php $script = "universidades.js"; ?>
+<?php $script2 = "administradores.js"; ?>
 <?php include 'includes/footer.php' ?>

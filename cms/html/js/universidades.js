@@ -235,4 +235,9 @@ function set_current_id(id){
 	current_id_universidad = id;
 }
 
+/*Filtrar spam*/
+$("a.btn-filter").click(function(e){
+	e.preventDefault();
+	$("#filtrar").toggleClass("hidden");
+});
 
