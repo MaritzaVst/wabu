@@ -18,14 +18,11 @@
 
 		<div class="actions">
 			<!--Buttons-->
-			<a href="#nueva-universidad" class="btn-new pull-right pop-nueva-universidad">
+			<a href="#filtrar" class="btn-filter pull-right">
+				FILTRAR
+			</a>
+			<a href="#" class="btn-new pull-right">
 				NUEVO
-			</a>
-			<a href="#desactivar" class="btn-disable pull-right sep pop-desactivar disabled">
-				DESACTIVAR
-			</a>
-			<a href="#activar" class="btn-active pull-right sep pop-activar disabled">
-				ACTIVAR
 			</a>
 			<!---->
 			<form action="#" method="get" class="search-form" data-parsley-validate="">
@@ -39,7 +36,7 @@
 	</header><!-- /header -->
 
 	<section class="data-list">
-
+		<div class="btn-select-all toggle-button"></div>
 		<table cellspacing="50">
 			<thead>
 				<tr>
@@ -127,161 +124,41 @@
 		</table>
 
 	</section>
-
-	<!--Popups: Desactivar, Nuevo -->
-	<section class="hidden boxes">
-		<!-- Desactivar -->
-		<div id="desactivar" class="pop-ups">
-			<div class="loading"><div class='uil-reload-css' style='-webkit-transform:scale(0.15)'><div></div></div></div>
-			<div class="heading">
-				Desactivar Universidad
-			</div>
-			<div class="body">
-				<p>¿Está seguro que desea desactivar a <br>la siguiente Universidad?</p>
-				<h3 class="title"></h3>
-				<p><small>Al desactivar no se mostrará en el aplicativo</small></p>
-
-				
-
-			</div>
-
-			<div class="actions">
-				<a href="#" onclick="$.fancybox.close();" class="btn-cancel">Cancelar</a>
-				<a href="javascript:;" onclick="desactivar_universidad();" class="btn-confirm bg-green">Aceptar</a>
-			</div>
-		</div>
-		<!-- Activar -->
-		<div id="activar" class="pop-ups">
-			<div class="loading"><div class='uil-reload-css' style='-webkit-transform:scale(0.15)'><div></div></div></div>
-			<div class="heading">
-				Activar Universidad
-			</div>
-			<div class="body">
-				<p>¿Está seguro que desea activar a <br>la siguiente Universidad?</p>
-				<h3 class="title"></h3>
-				<p><small>Al activar se mostrará en el aplicativo</small></p>
-
-				
-
-			</div>
-
-			<div class="actions">
-				<a href="#" onclick="$.fancybox.close();" class="btn-cancel">Cancelar</a>
-				<a href="javascript:;" onclick="activar_universidad();" class="btn-confirm bg-green">Aceptar</a>
-			</div>
-		</div>
-
-		<!-- Nuevo -->
-		<div id="nueva-universidad" class="pop-ups">
-			
-			<form action="#" method="post" id="form-nueva-universidad" data-parsley-validate="">
-
-				<div class="loading"><div class='uil-reload-css' style='-webkit-transform:scale(0.15)'><div></div></div></div>
-				<div class="heading">
-					Nueva Universidad
-				</div>
-				<div class="body">
-					
-						
-
-					<div class="box-form">
-
-						<label for="universidad">Nombre de la Universidad</label>
-						<input type="text" name="universidad" value="Universidad" id="universidad" required>
-
-					</div>
-
-					<div class="box-form">
-
-						<label for="pais">Pais</label>
-						<select name="pais" id="pais" required>
-							<option value="">[Selecciona un País]</option>
-							<option value="PE" selected>Perú</option>
-							<option value="BR">Brasil</option>
-							<option value="CO">Colombia</option>
-							<option value="EC">Ecuador</option>
+	<!--Filtrar-->
+	<div id="filtrar" class="hidden">
+		<h4 class="text-uppercase">Filtrar</h4>
+		<form>
+			<div class="content-form floating-effect">
+				<div class="row">
+					<div class="col-md-12">
+						<label for="type" class="label-floating">Tipo</label>
+						<img src="img/ic-down.png" class="ic-down">
+						<br>
+						<select name="type" class="select-type" required>
+							<option value="" selected=""></option>
+							<option value="content">Contenido</option>
+							<option value="comment">Comentario</option>
 						</select>
-
 					</div>
-
-					<div class="box-form">
-
-						<label for="dominio">Dominio del correo</label>
-						<input type="text" name="dominio"  id="dominio" required>
-						
+					<div class="col-md-12">
+						<label for="status" class="label-floating">Estado</label>
+						<img src="img/ic-down.png" class="ic-down">
+						<br>
+						<select name="status" class="select-status" required>
+							<option value="" selected=""></option>
+							<option value="locked">Bloqueado</option>
+							<option value="unlocked">Desbloqueado</option>
+						</select>
 					</div>
-
-						
-					
-
 				</div>
-
 				<div class="actions">
-					<a href="#" onclick="$.fancybox.close();" class="btn-cancel">Cancelar</a>
-					<button type="submit" class="btn-confirm bg-green">Aceptar</button>
+					<button class="btn-save btn-filter-spam bg-green">FILTRAR</button>
 				</div>
-
-			</form>
-
-		</div>
-
-		<!-- Editar -->
-		<div id="edit-universidad" class="pop-ups">
-
-			<form action="#" method="post" id="form-editar-universidad" data-parsley-validate="">
-
-				<div class="loading"><div class='uil-reload-css' style='-webkit-transform:scale(0.15)'><div></div></div></div>
-				<div class="heading">
-					Editar Universidad
-				</div>
-				<div class="body">
-					
-					
-
-						<div class="box-form">
-
-							<label for="universidad">Nombre de la Universidad</label>
-							<input type="text" name="universidad" value="Universidad" id="universidad" required>
-							<input type="hidden" name="id_universidad" id="id_universidad" />
-						</div>
-
-						<div class="box-form">
-
-							<label for="pais">Pais</label>
-							<select name="pais" id="pais" required>
-								<option value="">[Selecciona un País]</option>
-								<option value="PE" selected>Perú</option>
-								<option value="BR">Brasil</option>
-								<option value="CO">Colombia</option>
-								<option value="EC">Ecuador</option>
-							</select>
-
-						</div>
-
-						<div class="box-form">
-
-							<label for="dominio">Dominio del correo</label>
-							<input type="text" name="dominio"  id="dominio" required>
-							
-						</div>
-
-					
-					
-
-				</div>
-
-				<div class="actions">
-					<a href="#" onclick="$.fancybox.close();" class="btn-cancel">Cancelar</a>
-					<button type="submit" class="btn-confirm bg-green">Aceptar</button>
-				</div>
-
-			</form>
-
-		</div>
-	</section>
-
+			</div>
+		</form>
+	</div>
 </section>
 
 <?php $script = "universidades.js"; ?>
-
+<?php $script2 = "administradores.js"; ?>
 <?php include 'includes/footer.php' ?>

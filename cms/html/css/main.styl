@@ -451,16 +451,24 @@ input[type="password"]
 					.row > div
 						min-height 70px
 						.ic-down
-							bottom 30px
+							bottom 25px
+							position absolute
+							left 240px
+							&:before
+								content url("../img/ic-down.png")
 						.ic-calendar
-							bottom 26px
+							bottom 20px
 							left auto
 							right 10%
+							&:before
+								content url("../img/ic_calendar.png")
 					.btn-delete
 						position: absolute
 						right: 5px
 						top: 5px
 						cursor pointer
+						&:before
+							content url("../img/ic-delete.png")
 				.add-information
 					padding-top 20px
 					cursor pointer
@@ -850,7 +858,7 @@ input[type="password"]
 	.chosen-profesores
 		width 300px
 	.chosen-container
-		width 252px !important
+		width 70% !important
 	.chosen-profesores.parsley-error + ul.filled + .chosen-container
 		.chosen-choices
 			border-color red
@@ -992,8 +1000,9 @@ input[type="password"]
 		text-align center
 	.nav 
 		border 2px solid #1283ff;
-		width 240px
+		width auto
 		margin-bottom 1em
+		color #1283ff
 		a 
 			background-repeat: no-repeat
 			background-size: initial
@@ -1015,7 +1024,17 @@ input[type="password"]
 			list-style-type: none
 			li 
 				margin-bottom 1em
-				
+	
+.fancybox-overlay
+	.chosen-container
+		width 70% !important
+	.chosen-choices
+		border-radius 4px
+		background-color transparent!important
+		background-image none
+		height 100px
+		
+			
 .pagination-container
 	text-align center
 	background-color: #ececf5

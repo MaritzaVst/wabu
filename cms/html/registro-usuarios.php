@@ -222,7 +222,7 @@
 		<div class="row">
 			<div class="col-md-4">
 				<label for="carrera" class="label-floating">Carrera</label>
-				<img src="img/ic-down.png" class="ic-down">
+				<span class="ic-down"></span>
 				<br>
 				<select name="carrera" class="select-type" required>
 					<option value="" selected=""></option>
@@ -233,7 +233,7 @@
 			</div>
 			<div class="col-md-4">
 				<label for="ciclo" class="label-floating">Ciclo</label>
-				<img src="img/ic-down.png" class="ic-down">
+				<span class="ic-down"></span>
 				<br>
 				<select name="ciclo" class="select-type" required>
 					<option value="" selected=""></option>
@@ -244,7 +244,7 @@
 			</div>
 			<div class="col-md-4">
 				<label for="posicion" class="label-floating">Posición Académica</label>
-				<img src="img/ic-down.png" class="ic-down">
+				<span class="ic-down"></span>
 				<br>
 				<select name="posicion" class="select-type" required>
 					<option value="" selected=""></option>
@@ -253,7 +253,7 @@
 					<option value="3">Decimo Superior (?)</option>
 				</select>
 			</div>
-			<span class="btn-delete"><img src="img/ic-delete.png"></span>
+			<span class="btn-delete"></span>
 		</div>
 	</div>
 </script>
@@ -272,13 +272,13 @@
 			</div>
 			<div class="col-md-2">
 				<label for="inicio" class="label-floating">Fecha de Inicio</label>
-				<img src="img/ic_calendar.png" class="ic-calendar">
+				<span class="ic-calendar"></span>
 				<br>
 				<input type="text" name="inicio" required class="datetime">
 			</div>
 			<div class="col-md-2">
 				<label for="fin" class="label-floating">Fecha de Fin</label>
-				<img src="img/ic_calendar.png" class="ic-calendar">
+				<span class="ic-calendar"></span>
 				<br>
 				<input type="text" name="fin" required class="datetime end-date">
 			</div>
@@ -288,7 +288,7 @@
 					<span class="text-uppercase">Actualidad</span>
 				</label>
 			</div>
-			<span class="btn-delete"><img src="img/ic-delete.png"></span>
+			<span class="btn-delete"></span>
 		</div>
 	</div>
 </script>
