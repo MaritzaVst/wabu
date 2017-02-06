@@ -122,44 +122,7 @@
 				</div>
 				<h4>Información Académica</h4>
 				<div class="content-form">
-					<div class="border-gray user-information academic-info">
-						<div class="row">
-							<div class="col-md-4">
-								<label for="carrera" class="label-floating">Carrera</label>
-								<img src="img/ic-down.png" class="ic-down">
-								<br>
-								<select name="carrera" class="select-type" required>
-									<option value="" selected=""></option>
-									<option value="1">Administración</option>
-									<option value="2">Sistemas</option>
-									<option value="3">Comunicación</option>
-								</select>
-							</div>
-							<div class="col-md-4">
-								<label for="ciclo" class="label-floating">Ciclo</label>
-								<img src="img/ic-down.png" class="ic-down">
-								<br>
-								<select name="ciclo" class="select-type" required>
-									<option value="" selected=""></option>
-									<option value="1">Ciclo I</option>
-									<option value="2">Ciclo II</option>
-									<option value="3">Ciclo III</option>
-								</select>
-							</div>
-							<div class="col-md-4">
-								<label for="posicion" class="label-floating">Posición Académica</label>
-								<img src="img/ic-down.png" class="ic-down">
-								<br>
-								<select name="posicion" class="select-type" required>
-									<option value="" selected=""></option>
-									<option value="1">Tercio Superior</option>
-									<option value="2">Quinto Superior</option>
-									<option value="3">Decimo Superior (?)</option>
-								</select>
-							</div>
-							<span class="btn-delete"><img src="img/ic-delete.png"></span>
-						</div>
-					</div>
+					<div class="new-academic-information"></div>
 					<div class="add-information">
 						<img src="img/ic-add.png">
 						<span class="text-uppercase">Agregar carrera</span>
@@ -167,39 +130,7 @@
 				</div>
 				<h4>Información Laboral</h4>
 				<div class="content-form">
-					<div class="border-gray user-information work-info">
-						<div class="row">
-							<div class="col-md-4">
-								<label for="empresa" class="label-floating">Empresa</label>
-								<br>
-								<input type="text" name="empresa" required>
-							</div>
-							<div class="col-md-4">
-								<label for="puesto" class="label-floating">Puesto</label>
-								<br>
-								<input type="text" name="puesto" required>
-							</div>
-							<div class="col-md-2">
-								<label for="inicio" class="label-floating">Fecha de Inicio</label>
-								<img src="img/ic_calendar.png" class="ic-calendar">
-								<br>
-								<input type="text" name="inicio" required class="datetime">
-							</div>
-							<div class="col-md-2">
-								<label for="fin" class="label-floating">Fecha de Fin</label>
-								<img src="img/ic_calendar.png" class="ic-calendar">
-								<br>
-								<input type="text" name="fin" required class="datetime">
-							</div>
-							<div class="col-md-2 col-lg-offset-10 btn-restrict-date">
-								<label for="actual-date">
-									<input type="checkbox" name="actual-date" class="toggle-button">
-									<span class="text-uppercase">Actualidad</span>
-								</label>
-							</div>
-							<span class="btn-delete"><img src="img/ic-delete.png"></span>
-						</div>
-					</div>
+					<div class="new-laboral-information"></div>
 					<div class="add-information">
 						<img src="img/ic-add.png">
 						<span class="text-uppercase">Agregar información adicional</span>
@@ -282,4 +213,79 @@
 </section>
 <?php $script = "file-preview.js"; ?>
 <?php $script3 = "administradores.js"; ?>
+<script id="academic-template"  type="text/template">
+	<div class="border-gray user-information academic-info">
+		<div class="row">
+			<div class="col-md-4">
+				<label for="carrera" class="label-floating">Carrera</label>
+				<img src="img/ic-down.png" class="ic-down">
+				<br>
+				<select name="carrera" class="select-type" required>
+					<option value="" selected=""></option>
+					<option value="1">Administración</option>
+					<option value="2">Sistemas</option>
+					<option value="3">Comunicación</option>
+				</select>
+			</div>
+			<div class="col-md-4">
+				<label for="ciclo" class="label-floating">Ciclo</label>
+				<img src="img/ic-down.png" class="ic-down">
+				<br>
+				<select name="ciclo" class="select-type" required>
+					<option value="" selected=""></option>
+					<option value="1">Ciclo I</option>
+					<option value="2">Ciclo II</option>
+					<option value="3">Ciclo III</option>
+				</select>
+			</div>
+			<div class="col-md-4">
+				<label for="posicion" class="label-floating">Posición Académica</label>
+				<img src="img/ic-down.png" class="ic-down">
+				<br>
+				<select name="posicion" class="select-type" required>
+					<option value="" selected=""></option>
+					<option value="1">Tercio Superior</option>
+					<option value="2">Quinto Superior</option>
+					<option value="3">Decimo Superior (?)</option>
+				</select>
+			</div>
+			<span class="btn-delete"><img src="img/ic-delete.png"></span>
+		</div>
+	</div>
+</script>
+<script id="laboral-template" type="text/template">
+	<div class="border-gray user-information work-info">
+		<div class="row">
+			<div class="col-md-4">
+				<label for="empresa" class="label-floating">Empresa</label>
+				<br>
+				<input type="text" name="empresa" required>
+			</div>
+			<div class="col-md-4">
+				<label for="puesto" class="label-floating">Puesto</label>
+				<br>
+				<input type="text" name="puesto" required>
+			</div>
+			<div class="col-md-2">
+				<label for="inicio" class="label-floating">Fecha de Inicio</label>
+				<img src="img/ic_calendar.png" class="ic-calendar">
+				<br>
+				<input type="text" name="inicio" required class="datetime">
+			</div>
+			<div class="col-md-2">
+				<label for="fin" class="label-floating">Fecha de Fin</label>
+				<img src="img/ic_calendar.png" class="ic-calendar">
+				<br>
+				<input type="text" name="fin" required class="datetime">
+			</div>
+			<div class="col-md-2 col-lg-offset-10 btn-restrict-date">
+				<label for="actual-date">
+					<input type="checkbox" name="actual-date" class="toggle-button">
+					<span class="text-uppercase">Actualidad</span>
+				</label>
+			</div>
+			<span class="btn-delete"><img src="img/ic-delete.png"></span>
+		</div>
+	</div>
+</script>
 <?php include 'includes/footer.php' ?>
