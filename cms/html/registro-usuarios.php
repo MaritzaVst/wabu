@@ -164,7 +164,7 @@
 							</select>
 						</div>
 					</div>
-					<h5>Puntaje ganado por acciones</h5>
+					<h5 class="subtitle-blue">Puntaje ganado por acciones</h5>
 					<div class="row scores">
 						<div class="col-md-6">
 							<label class="clearfix">
@@ -201,7 +201,11 @@
 							</label>
 							<label class="clearfix">
 								<span class="col-md-9">Enviaron su contenido por correo</span>
-								<input type="number" name="puntaje 6">
+								<input type="number" name="puntaje 10">
+							</label>
+							<label class="row total-score">
+								<span class="col-md-9 subtitle-blue">Puntaje Total</span>
+								<input type="number" name="total" value="15000">
 							</label>
 						</div>
 					</div>
@@ -276,7 +280,7 @@
 				<label for="fin" class="label-floating">Fecha de Fin</label>
 				<img src="img/ic_calendar.png" class="ic-calendar">
 				<br>
-				<input type="text" name="fin" required class="datetime">
+				<input type="text" name="fin" required class="datetime end-date">
 			</div>
 			<div class="col-md-2 col-lg-offset-10 btn-restrict-date">
 				<label for="actual-date">

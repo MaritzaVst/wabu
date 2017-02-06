@@ -66,13 +66,18 @@ input
 	border solid 1px #d3d3d3
 .text-uppercase
 	text-transform uppercase
-
+.subtitle-blue
+	font-size 13px!important
+	letter-spacing 0.3px
+	color #1283ff!important
+	font-weight 400
+	margin-bottom 0
 /*Checked - unchecked*/
 .toggle-button
 	&:before
 		content: url("../img/unchecked.png")
-	&.select
-		content: url("../img/checked.png")
+	&.select:before
+		content: url("../img/checked.png")!important
 /*Errors messages*/
 .parsley-errors-list
 	display none
@@ -442,7 +447,7 @@ input[type="password"]
 				.user-information
 					padding 10px 30px 0
 					position relative
-					margin-bottom 25px
+					margin 25px 0 25px
 					.row > div
 						min-height 70px
 						.ic-down
@@ -609,6 +614,12 @@ input[type="password"]
 							input
 								width 100%
 				.row.scores
+					.total-score
+						span
+						input
+							padding-top 30px
+						input
+							background-image none
 					input
 						width 80px
 						text-align right
