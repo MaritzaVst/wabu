@@ -160,10 +160,8 @@
 					<div class="heading">
 						Nueva Carrera
 					</div>
-
 					<div class="body row">
 						<div class="box-form">
-
 							<div class="col-xs-12 col-sm-6 text-left">
 								<label class="label-floating active">Nombre de carrera</label>
 								<br>
@@ -173,10 +171,7 @@
 
 								<label class="text-ciclos">Cantidad de ciclos</label>
 								<input type="number" min="1" max="13" name="ciclos" id="cantidad_ciclos" value="10" class="ciclos" required>
-							</div>
-
-
-							
+							</div>		
 						</div>
 						<div class="box-form">
 							<p>Agrege los cursos a cada uno de los ciclos</p>
@@ -207,33 +202,34 @@
 		</div>
 
 		<!-- Editar -->
-		<div id="editar-carrera" class="pop-ups profesores carrera">
-			<form action="#" method="post" id="form-editar-carrera" class="form-new container" data-parsley-validate="">
+		<div id="editar-carrera" class="pop-ups profesores carrera main-content">
+			<form action="#" method="post" id="form-editar-carrera" class="form-new container content-form floating-effect" data-parsley-validate="">
 				<div class="loading"><div class='uil-reload-css' style='-webkit-transform:scale(0.15)'><div></div></div></div>
 				<div class="heading">
 					Editar Carrera
 				</div>
 
-				<div class="body">
-					<div class="box-form row">
+				<div class="body row">
+					<div class="box-form">
 
-						<div class="col-xs-12 col-sm-8 text-left">
-							<label>Nombre de carrera</label>
+						<div class="col-xs-12 col-sm-6 text-left">
+							<label class="label-floating active">Nombre de carrera</label>
+							<br>
 							<input type="text" name="carrera" class="carrera" required>
 							<input type="hidden" name="id_carrera" id="id_carrera_edit">
 						</div>
-						<div class="col-xs-12 col-sm-4 text-center">
+						<div class="col-xs-12 col-sm-6 text-center">
 
-							<label>Cantidad de ciclos</label>
+							<label class="text-ciclos">Cantidad de ciclos</label>
 							<input type="number" min="1" max="13" name="ciclos" id="cantidad_ciclos_edit" class="ciclos" value="5" required>
 						</div>
 
 						
 					</div>
-					<div class="box-form row">
+					<div class="box-form">
 						<p>Agrege los cursos a cada uno de los ciclos</p>
 						<div class="edit_carrera ciclo_zero">
-							<label > <input type="checkbox" name="ciclo_zero" value="1" class="btn-select-all toggle-button"> Incluir ciclo 0 </label>
+							<label > <input type="checkbox" name="ciclo_zero" value="1" class="toggle-button"> Incluir ciclo 0 </label>
 						</div>
 						<div class="list-ciclo">
 							<div class="nav">
