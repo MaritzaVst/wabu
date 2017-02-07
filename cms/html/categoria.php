@@ -86,55 +86,38 @@
 
 	<!--Popups: Desactivar, Nuevo -->
 	<section class="hidden boxes">
-		
-
-		
-
 		<!-- Editar -->
-		<div id="edit-categoria" class="pop-ups">
-
-			<form action="#" method="post" id="form-editar-categoria" data-parsley-validate="">
-
+		<div id="edit-categoria" class="pop-ups main-content">
+			<form action="#" method="post" id="form-editar-categoria" class="content-form floating-effect" data-parsley-validate="">
 				<div class="loading"><div class='uil-reload-css' style='-webkit-transform:scale(0.15)'><div></div></div></div>
 				<div class="heading">
 					Editar categoria
 				</div>
-				<div class="body">
-					
-					
+				<div class="body one-col row">
+					<div class="box-form col-md-12">
+						<label for="categoria" class="label-floating active">Nombre de la categoria</label>
+						</br>
+						<input type="text" name="categoria" value="categoria" id="nombre_categoria" required>
+						<input type="hidden" name="id_categoria" id="id_categoria" />
+					</div>
 
-						<div class="box-form">
+					<div class="box-form col-md-12">
+						<label for="pregunta" class="label-floating active">Pregunta de la categoria</label>
+						<br>
+						<input type="text" name="pregunta"  id="pregunta" required>
+					</div>
 
-							<label for="categoria">Nombre de la categoria</label>
-							<input type="text" name="categoria" value="categoria" id="nombre_categoria" required>
-							<input type="hidden" name="id_categoria" id="id_categoria" />
-						</div>
-
-						<div class="box-form">
-
-							<label for="pregunta">Pregunta de la categoria</label>
-							<input type="text" name="pregunta"  id="pregunta" required>
-
-						</div>
-
-						<div class="box-form">
-
-							<label for="descripcion">Descripción</label>
-							<textarea name="descripcion" id="descripcion" required></textarea>
-						</div>
-
-					
-					
-
+					<div class="box-form col-md-12">
+						<label for="descripcion" class="label-floating active">Descripción</label>
+						<br>
+						<textarea name="descripcion" id="descripcion" required></textarea>
+					</div>
 				</div>
-
 				<div class="actions">
 					<a href="#" onclick="$.fancybox.close();" class="btn-cancel">Cancelar</a>
 					<button type="submit" class="btn-confirm bg-green">Aceptar</button>
 				</div>
-
 			</form>
-
 		</div>
 	</section>
 
