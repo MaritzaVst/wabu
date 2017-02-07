@@ -230,14 +230,21 @@ input[type="password"]
 			color #5a6066
 			background-color transparent
 	&#nuevo-profesor
+	&#editar-profesor
 		max-width initial!important
 		.body
-			padding 30px 120px
+			padding 30px 120px 0px
 			.questions
 				label
 					margin 0
+					font-size 16px
+					color rgba(90,96,102,0.6)
 				input
 					background-image none
+					padding-bottom 2px
+					&::-webkit-outer-spin-button
+					&::-webkit-inner-spin-button
+						-webkit-appearance: none
 				.item
 					min-height auto
 					&:first-of-type
@@ -257,6 +264,7 @@ input[type="password"]
 	&#edit-universidad
 	&#edit-categoria
 	&#nuevo-profesor
+	&#editar-profesor
 		max-width 560px
 		width initial
 		min-height auto!important

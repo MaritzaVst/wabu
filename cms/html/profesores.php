@@ -284,23 +284,19 @@
 		</div>
 
 		<!-- Editar -->
-		<div id="editar-profesor" class="pop-ups profesores">
-			<form action="#" method="post" id="form-editar-profesor" class="form-new container" data-parsley-validate="" enctype="multipart/form-data">
+		<div id="editar-profesor" class="pop-ups profesores main-content">
+			<form action="#" method="post" id="form-editar-profesor" class="form-new container content-form floating-effect" data-parsley-validate="" enctype="multipart/form-data">
 				<div class="loading"><div class='uil-reload-css' style='-webkit-transform:scale(0.15)'><div></div></div></div>
 				<div class="heading">
 					Editar Profesor
 				</div>
 
-				<div class="body">
+				<div class="body row">
 					
 					<div class="box-form row text-left info">
-
-
-
 						<div class="col-xs-12 text-center">
 							<a href="javascript:;" class="remove-image"></a>
-							<div class="preview-image">
-								
+							<div class="preview-image">		
 								<img id="preview-image-edit" src="img/default.png" >
 							</div>
 
@@ -310,77 +306,62 @@
 
 						</div>
 
-						<div class="col-xs-12 col-sm-6">
-							
-							<label fornombre">Nombre</label>
+						<div class="col-xs-12 col-sm-6">						
+							<label for="nombre" class="label-floating active">Nombre</label>
+							<br>
 							<input type="text" name="nombre" value="Enrique Andrés" class="nombre" class="nombre" data-parsley-pattern="^[A-Za-záíéóúÁÉÍÓÚ ]+$" required>
-
 						</div>
-						
-					
 
-						<div class="col-xs-12 col-sm-6">
-							
-							<label>Apellido</label>
+						<div class="col-xs-12 col-sm-6">	
+							<label class="label-floating active">Apellido</label>
+							<br>
 							<input type="text" name="apellido" value="Saravia V" class="apellido" data-parsley-pattern="^[A-Za-záíéóúÁÉÍÓÚ ]+$" required>
-
 						</div>
 
 						<div class="col-xs-12 col-sm-6">
-							
-							<label>Estudios superiores</label>
+							<label class="label-floating active">Estudios superiores</label>
+							<br>
 							<select name="estudios" class="estudios" required>
 								<option value="">[Selecciona Estudios]</option>
 								<option value="superior" selected>Superior</option>
 								<option value="bachiller">Bachiller</option>
 							</select>
-
 						</div>
 						
 						<div class="col-xs-12 col-sm-6">
-							
-							<label>URL Bio</label>
+							<label class="label-floating active">URL Bio</label>
+							<br>
 							<input type="text" name="url_bio" class="url_bio" value="http://google.com" placeholder="http://" required>
-
 						</div>
-						
 					</div>
 
 					<div class="box-form row questions">
 						<h3>Calificación Inicial</h3>
 
-						<div class="item">
-							<label>¿Qué tanto aprendiste?</label>
-							<input type="number" min="0" step="any" name="cuanto_aprendiste" class="cuanto_aprendiste" required>
+						<div class="item col-md-8 col-md-offset-2">
+							<label class="pull-left">¿Qué tanto aprendiste?</label>
+							<input type="number" min="0" step="any" name="cuanto_aprendiste" class="cuanto_aprendiste pull-right" required>
 						</div>
-
-						<div class="item">
-							<label>¿Qué tan alto califica?</label>
-							<input type="number" min="0" step="any" name="alto_califica" class="alto_califica" required>
+						<div class="item col-md-8 col-md-offset-2"">
+							<label class="pull-left">¿Qué tan alto califica?</label>
+							<input type="number" min="0" step="any" name="alto_califica" class="alto_califica pull-right" required>
 						</div>
-
-						<div class="item">
-							<label>¿Qué tan buena gente es?</label>
-							<input type="number" min="0" step="any" name="buena_gente" class="buena_gente" required>
+						<div class="item col-md-8 col-md-offset-2"">
+							<label class="pull-left">¿Qué tan buena gente es?</label>
+							<input type="number" min="0" step="any" name="buena_gente" class="buena_gente pull-right" required>
 						</div>
 
 
 					</div>
 
 					<div class="box-form row questions">
-
 						<div class="col-xs-12 col-sm-6">
-							
-							<label>Promedio Calificación</label>
+							<label class="col-md-8">Promedio Calificación</label>
 							<input type="number" min="0" step="any" name="prom_calificacion" class="prom_calificacion" value="1" required>
-
 						</div>
-
-						<div class="col-xs-12 col-sm-6">
-							
-							<label>Número de Calificaciones</label>
+						<div class="col-xs-12 col-sm-6">						
+							<label class="col-md-8">Número de Calificaciones</label>
 							<input type="number" min="0" step="any" name="num_calificacion" class="num_calificacion" value="2" required>
-
 						</div>
 						
 					</div>
