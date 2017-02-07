@@ -190,60 +190,48 @@
 					<button type="submit" class="btn-confirm bg-green">Aceptar</button>
 				</div>
 			</form>
-		</div
+		</div>
 
 		<!-- Editar -->
-		<div id="edit-universidad" class="pop-ups">
-
-			<form action="#" method="post" id="form-editar-universidad" data-parsley-validate="">
-
+		<div id="edit-universidad" class="pop-ups main-content">
+			<form action="#" method="post" id="form-nueva-universidad" class="content-form floating-effect" data-parsley-validate="">
 				<div class="loading"><div class='uil-reload-css' style='-webkit-transform:scale(0.15)'><div></div></div></div>
 				<div class="heading">
 					Editar Universidad
 				</div>
-				<div class="body">
-					
-					
+				<div class="body one-col row">
+					<div class="box-form col-md-12">
+						<label for="universidad" class="label-floating active">Nombre de la Universidad</label>
+						<br>
+						<input type="text" name="universidad" value="Universidad"" class="codigo" required>						
+						<input type="hidden" name="id_universidad" id="id_universidad" />
+					</div>
 
-						<div class="box-form">
+					<div class="box-form col-md-12">
+						<label for="pais" class="label-floating active">Pais</label>
+						<img src="img/ic-down.png" class="ic-down">
+						<br>
+						<select name="pais" id="pais" required>
+							<option value="" ></option>
+							<option value="PE" selected>Perú</option>
+							<option value="BR">Brasil</option>
+							<option value="CO">Colombia</option>
+							<option value="EC">Ecuador</option>
+						</select>		
+					</div>
 
-							<label for="universidad">Nombre de la Universidad</label>
-							<input type="text" name="universidad" value="Universidad" id="universidad" required>
-							<input type="hidden" name="id_universidad" id="id_universidad" />
-						</div>
-
-						<div class="box-form">
-
-							<label for="pais">Pais</label>
-							<select name="pais" id="pais" required>
-								<option value="">[Selecciona un País]</option>
-								<option value="PE" selected>Perú</option>
-								<option value="BR">Brasil</option>
-								<option value="CO">Colombia</option>
-								<option value="EC">Ecuador</option>
-							</select>
-
-						</div>
-
-						<div class="box-form">
-
-							<label for="dominio">Dominio del correo</label>
-							<input type="text" name="dominio"  id="dominio" required>
-							
-						</div>
-
-					
-					
-
+					<div class="box-form col-md-12">
+						<label for="dominio" class="label-floating active">Dominio del correo</label>
+						<br>
+						<input type="text" name="dominio"  id="dominio" value="asdafasdaf" required>						
+					</div>
 				</div>
 
 				<div class="actions">
 					<a href="#" onclick="$.fancybox.close();" class="btn-cancel">Cancelar</a>
 					<button type="submit" class="btn-confirm bg-green">Aceptar</button>
 				</div>
-
 			</form>
-
 		</div>
 	</section>
 
