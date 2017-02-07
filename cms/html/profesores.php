@@ -295,14 +295,16 @@
 					
 					<div class="box-form row text-left info">
 						<div class="col-xs-12 text-center">
-							<a href="javascript:;" class="remove-image"></a>
-							<div class="preview-image">		
-								<img id="preview-image-edit" src="img/default.png" >
-							</div>
-
-							<input type="file" name="file-image-edit" id="file-image-edit" class="inputfile" onchange="onFileSelected(event, 'preview-image-edit')" required>
-							<label for="file-image-edit" class="lbl-inputFile disabled">Subir Foto</label>
-							<div class="error-image"></div>
+							<div class="img-preview">
+								<input type="file" id="files" />
+								<div class="img-container">
+									<img id="image" class="absolute-center" src="img/team.png"/>
+								</div>
+								<div class="upload-btn">
+									<img src="img/ic-camera.png">
+									<span>Cargar imagen</span>
+								</div>
+							</div>	
 
 						</div>
 

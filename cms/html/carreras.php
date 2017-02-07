@@ -153,34 +153,35 @@
 		</div>
 
 		<!-- Nuevo -->
-		<div id="nueva-carrera" class="pop-ups profesores carrera data-list admin-new">
+		<div id="nueva-carrera" class="pop-ups profesores carrera data-list admin-new main-content">
 			<div>
-				<form action="#" method="post" id="form-nueva-carrera" class="form-new container main-content" data-parsley-validate="">
+				<form action="#" method="post" id="form-nueva-carrera" class="form-new container content-form floating-effect" data-parsley-validate="">
 					<div class="loading"><div class='uil-reload-css' style='-webkit-transform:scale(0.15)'><div></div></div></div>
 					<div class="heading">
 						Nueva Carrera
 					</div>
 
-					<div class="body content-form">
-						<div class="box-form row">
+					<div class="body row">
+						<div class="box-form">
 
-							<div class="col-xs-12 col-sm-8 text-left">
-								<label class="label-floating">Nombre de carrera</label>
+							<div class="col-xs-12 col-sm-6 text-left">
+								<label class="label-floating active">Nombre de carrera</label>
+								<br>
 								<input type="text" name="carrera" class="carrera" required>
 							</div>
-							<div class="col-xs-12 col-sm-4 text-center">
+							<div class="col-xs-12 col-sm-6 text-center">
 
-								<label class="label-floating">Cantidad de ciclos</label>
+								<label class="text-ciclos">Cantidad de ciclos</label>
 								<input type="number" min="1" max="13" name="ciclos" id="cantidad_ciclos" value="10" class="ciclos" required>
 							</div>
 
 
 							
 						</div>
-						<div class="box-form row">
+						<div class="box-form">
 							<p>Agrege los cursos a cada uno de los ciclos</p>
 							<div class="new_carrera ciclo_zero">
-								<label > <input type="checkbox" name="ciclo_zero" value="1"> Incluir ciclo 0 </label>
+								<label > <input type="checkbox" name="ciclo_zero" value="1" class="toggle-button"> Incluir ciclo 0 </label>
 							</div>
 							<div class="list-ciclo">
 								<div class="nav">
@@ -232,7 +233,7 @@
 					<div class="box-form row">
 						<p>Agrege los cursos a cada uno de los ciclos</p>
 						<div class="edit_carrera ciclo_zero">
-							<label > <input type="checkbox" name="ciclo_zero" value="1"> Incluir ciclo 0 </label>
+							<label > <input type="checkbox" name="ciclo_zero" value="1" class="btn-select-all toggle-button"> Incluir ciclo 0 </label>
 						</div>
 						<div class="list-ciclo">
 							<div class="nav">
@@ -280,5 +281,4 @@
 </section>
 
 <?php $script = "carreras.js?v=".rand(0,100); ?>
-
 <?php include 'includes/footer.php' ?>
