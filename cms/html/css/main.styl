@@ -229,16 +229,40 @@ input[type="password"]
 			margin-top 10px
 			color #5a6066
 			background-color transparent
+	&#nuevo-profesor
+		max-width initial!important
+		.body
+			padding 30px 120px
+			.questions
+				label
+					margin 0
+				input
+					background-image none
+				.item
+					min-height auto
+					&:first-of-type
+						margin-top 20px
+		.img-preview
+			padding-top 0
+			margin-bottom 35px
+		.img-container
+			margin 0 auto
+			background-color white
+			border-radius 100%
+			img
+				width 100%
 	&#nuevo-curso
 	&#editar-curso
 	&#nueva-universidad
 	&#edit-universidad
 	&#edit-categoria
+	&#nuevo-profesor
 		max-width 560px
 		width initial
 		min-height auto!important
 		padding-bottom: 40px
 		border-radius: 10px
+		background-color #ffffff 
 		form
 			.body
 				padding-top 30px
@@ -314,6 +338,33 @@ input[type="password"]
 			position: absolute
 			bottom: 40px
 			left: 235px
+	.img-preview
+		padding-top: 40px
+		#files
+			position: absolute
+			left: -9999px
+			top: -9999px
+			z-index: -9999
+		.img-container
+			width: 140px
+			height: 140px
+			border-radius: 8px
+			background-color: #eaeaeb
+			position: relative
+			overflow: hidden
+			&.active
+				border: solid 2px #d3d3d3
+				background-color: #ffffff
+		span 
+			letter-spacing: 0.3px
+			color: #9b9b9b
+			font-size: 12px
+			text-transform: uppercase
+			padding-left: 5px
+		.upload-btn {
+			margin-top 15px
+			cursor pointer
+		}
 	/*Listado*/
 	.data-list 
 		padding 2em
@@ -556,33 +607,6 @@ input[type="password"]
 				font-size 13px
 				padding-bottom 8px
 			/*Image Upload*/
-			.img-preview
-				padding-top: 40px
-				#files
-					position: absolute
-					left: -9999px
-					top: -9999px
-					z-index: -9999
-				.img-container
-					width: 140px
-					height: 140px
-					border-radius: 8px
-					background-color: #eaeaeb
-					position: relative
-					overflow: hidden
-					&.active
-						border: solid 2px #d3d3d3
-						background-color: #ffffff
-				span 
-					letter-spacing: 0.3px
-					color: #9b9b9b
-					font-size: 12px
-					text-transform: uppercase
-					padding-left: 5px
-				.upload-btn {
-					margin-top 15px
-					cursor pointer
-				}
 			/*------*/
 			/*New Level*/
 			&.new-level
@@ -1108,8 +1132,13 @@ input[type="password"]
 		width: 300px;
 	textarea 
 		height 100px;
+.fancybox-wrap
+	margin-top 40px!important
+	margin-bottom 40px!important
 .fancybox-wrap, .fancybox-inner
-	width: auto !important;
+	width: auto !important
+	left: 50%!important
+	transform: translatex(-50%)
 .fancybox-inner
 	height auto !important
 	padding-bottom 3em !important

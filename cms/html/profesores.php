@@ -191,104 +191,87 @@
 		</div>
 
 		<!-- Nuevo -->
-		<div id="nuevo-profesor" class="pop-ups profesores">
-			<form action="#" method="post" id="form-nuevo-profesor" class="form-new container" data-parsley-validate="" enctype="multipart/form-data">
+		<div id="nuevo-profesor" class="pop-ups profesores main-content">
+			<form action="#" method="post" id="form-nuevo-profesor" class="form-new container content-form floating-effect" data-parsley-validate="" enctype="multipart/form-data">
 				<div class="loading"><div class='uil-reload-css' style='-webkit-transform:scale(0.15)'><div></div></div></div>
 				<div class="heading">
 					Nuevo Profesor
 				</div>
 
-				<div class="body">
+				<div class="body row">
 					
 					<div class="box-form row text-left info">
-
-
-
 						<div class="col-xs-12 text-center">
-							
-							<div class="preview-image">
+							<div class="img-preview">
+								<input type="file" id="files" />
+								<div class="img-container">
+									<img id="image" class="absolute-center" src="img/default.png"/>
+								</div>
+								<div class="upload-btn">
+									<img src="img/ic-camera.png">
+									<span>Cargar imagen</span>
+								</div>
+							</div>												
+							<!-- <div class="preview-image">
 								<img id="preview-image" src="img/default.png" >
 							</div>
 
 							<input type="file" name="file-image" id="file-image-new" class="inputfile" onchange="onFileSelected(event, 'preview-image')" required>
 							<label for="file-image-new" class="lbl-inputFile">Subir Foto</label>
-							<div class="error-image"></div>
-
+							<div class="error-image"></div> -->
 						</div>
-
-						<div class="col-xs-12 col-sm-6">
-							
-							<label>Nombre</label>
+						<div class="col-xs-12 col-sm-6">			
+							<label class="label-floating">Nombre</label>
+							<br>
 							<input type="text" name="nombre" class="nombre" data-parsley-pattern="^[A-Za-záíéóúÁÉÍÓÚ ]+$" required>
-
 						</div>
-						
-					
-
 						<div class="col-xs-12 col-sm-6">
-							
-							<label>Apellido</label>
+							<label class="label-floating">Apellido</label>
+							<br>
 							<input type="text" name="apellido" class="apellido" data-parsley-pattern="^[A-Za-záíéóúÁÉÍÓÚ ]+$" required>
-
 						</div>
-
-						<div class="col-xs-12 col-sm-6">
-							
-							<label>Estudios superiores</label>
+						<div class="col-xs-12 col-sm-6">							
+							<label class="label-floating">Estudios superiores</label>
+							<br>
 							<select name="estudios" class="estudios" required>
-								<option value="">[Selecciona Estudios]</option>
-								<option value="superior" selected>Superior</option>
+								<option value=""></option>
+								<option value="superior">Superior</option>
 								<option value="bachiller">Bachiller</option>
 							</select>
-
 						</div>
 						
-						<div class="col-xs-12 col-sm-6">
-							
-							<label>URL Bio</label>
-							<input type="text" name="url_bio" class="url_bio" value="http://google.com" placeholder="http://" required>
-
+						<div class="col-xs-12 col-sm-6">							
+							<label class="label-floating">URL Bio</label>
+							<br>
+							<input type="text" name="url_bio" class="url_bio" value="http://google.com" required>
 						</div>
 						
 					</div>
 
 					<div class="box-form row questions">
 						<h3>Calificación Inicial</h3>
-
-						<div class="item">
-							<label>¿Qué tanto aprendiste?</label>
-							<input type="number" min="0" step="any" name="cuanto_aprendiste" class="cuanto_aprendiste" required>
+						<div class="item col-md-8 col-md-offset-2">
+							<label class="pull-left">¿Qué tanto aprendiste?</label>
+							<input type="number" min="0" step="any" name="cuanto_aprendiste" class="cuanto_aprendiste pull-right" required>
 						</div>
-
-						<div class="item">
-							<label>¿Qué tan alto califica?</label>
-							<input type="number" min="0" step="any" name="alto_califica" class="alto_califica" required>
+						<div class="item col-md-8 col-md-offset-2"">
+							<label class="pull-left">¿Qué tan alto califica?</label>
+							<input type="number" min="0" step="any" name="alto_califica" class="alto_califica pull-right" required>
 						</div>
-
-						<div class="item">
-							<label>¿Qué tan buena gente es?</label>
-							<input type="number" min="0" step="any" name="buena_gente" class="buena_gente" required>
+						<div class="item col-md-8 col-md-offset-2"">
+							<label class="pull-left">¿Qué tan buena gente es?</label>
+							<input type="number" min="0" step="any" name="buena_gente" class="buena_gente pull-right" required>
 						</div>
-
-
 					</div>
-
 					<div class="box-form row questions">
-
 						<div class="col-xs-12 col-sm-6">
-							
-							<label>Promedio Calificación</label>
+							<label class="col-md-8">Promedio Calificación</label>
 							<input type="number" min="0" step="any" name="prom_calificacion" class="prom_calificacion"  required>
-
 						</div>
-
-						<div class="col-xs-12 col-sm-6">
-							
-							<label>Número de Calificaciones</label>
+						<div class="col-xs-12 col-sm-6">						
+							<label class="col-md-8">Número de Calificaciones</label>
 							<input type="number" min="0" step="any" name="num_calificacion" class="num_calificacion" required>
-
-						</div>
-						
+						</div>				
 					</div>
 
 				</div>
@@ -458,5 +441,7 @@
 </section>
 
 <?php $script = "profesores.js"; ?>
+<?php $script2 = "administradores.js"; ?>
+<?php $script3 = "file-preview.js"; ?>
 
 <?php include 'includes/footer.php' ?>
