@@ -384,31 +384,29 @@
 		</div>
 
 		<!-- Nuevo -->
-		<div id="nuevo-curso" class="pop-ups profesores cursos">
-			<form action="#" method="post" id="form-nuevo-curso" class="form-new container" data-parsley-validate="" enctype="multipart/form-data">
+		<div id="nuevo-curso" class="pop-ups profesores cursos main-content">
+			<form action="#" method="post" id="form-nuevo-curso" class="form-new container content-form floating-effect" data-parsley-validate="" enctype="multipart/form-data">
 				<div class="loading"><div class='uil-reload-css' style='-webkit-transform:scale(0.15)'><div></div></div></div>
 				<div class="heading">
 					Nuevo Curso
 				</div>
-
-				<div class="body one-col">
-					<div class="box-form">
-
-						<label>Código</label>
-						<input type="text" name="codigo" class="codigo" required>
-						
+				<div class="body one-col row">
+					<div class="box-form col-md-8 col-md-offset-2 text-left">
+						<label class="label-floating">Código</label>
+						<br>
+						<input type="text" name="codigo" class="codigo" required>						
 					</div>
 
-					<div class="box-form">
-
-						<label>Nombre del curso</label>
-						<input type="text" name="nombre" class="nombre" required>
-						
+					<div class="box-form col-md-8 col-md-offset-2 text-left">
+						<label class="label-floating">Nombre del curso</label>
+						<br>
+						<input type="text" name="nombre" class="nombre" required>					
 					</div>
 
-					<div class="box-form">
+					<div class="box-form col-md-12">
 
-						<label>Profesores</label>
+						<label class="subtitle-blue">Profesores</label>
+						<br>
 						<select name="profesores[]" class="profesores chosen-profesores" multiple data-placeholder="Busque a los profesores para agregarlos a un curso." required>
 							<option value="1">Alan Garcia</option>
 							<option value="2">Keiko Fujimor</option>
@@ -562,13 +560,9 @@
 							<option value="18">Ollanta Humala</option>
 							<option value="19">Toledo</option>
 							<option value="20">PPK</option>
-						</select>
-						
+						</select>					
 					</div>
-
-
 				</div>
-
 				<div class="actions">
 					<a href="#" onclick="$.fancybox.close();" class="btn-cancel">Cancelar</a>
 					<button type="submit" class="btn-confirm bg-green">Aceptar</button>
@@ -657,5 +651,6 @@
 </section>
 
 <?php $script = "cursos.js"; ?>
+<?php $script2 = "administradores.js"; ?>
 
 <?php include 'includes/footer.php' ?>

@@ -109,7 +109,7 @@
 
 	</section>
 
-	<section class="hidden boxes ">
+	<section class="hidden boxes main-content">
 
 		<!-- Desactivar -->
 		<div id="desactivar" class="pop-ups">
@@ -155,7 +155,7 @@
 		<!-- Nuevo -->
 		<div id="nueva-carrera" class="pop-ups profesores carrera data-list admin-new">
 			<div>
-				<form action="#" method="post" id="form-nueva-carrera" class="form-new container" data-parsley-validate="">
+				<form action="#" method="post" id="form-nueva-carrera" class="form-new container main-content" data-parsley-validate="">
 					<div class="loading"><div class='uil-reload-css' style='-webkit-transform:scale(0.15)'><div></div></div></div>
 					<div class="heading">
 						Nueva Carrera
