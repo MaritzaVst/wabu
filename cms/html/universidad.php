@@ -152,58 +152,45 @@
 		</div>
 
 		<!-- Nuevo -->
-		<div id="nueva-universidad" class="pop-ups">
-			
-			<form action="#" method="post" id="form-nueva-universidad" data-parsley-validate="">
-
+		<div id="nueva-universidad" class="pop-ups main-content">
+			<form action="#" method="post" id="form-nueva-universidad" class="content-form floating-effect" data-parsley-validate="">
 				<div class="loading"><div class='uil-reload-css' style='-webkit-transform:scale(0.15)'><div></div></div></div>
 				<div class="heading">
 					Nueva Universidad
 				</div>
-				<div class="body">
-					
-						
-
-					<div class="box-form">
-
-						<label for="universidad">Nombre de la Universidad</label>
-						<input type="text" name="universidad" value="Universidad" id="universidad" required>
-
+				<div class="body one-col row">
+					<div class="box-form col-md-12">
+						<label for="universidad" class="label-floating">Nombre de la Universidad</label>
+						<br>
+						<input type="text" name="codigo" class="codigo" required>						
 					</div>
 
-					<div class="box-form">
-
-						<label for="pais">Pais</label>
+					<div class="box-form col-md-12">
+						<label for="pais" class="label-floating">Pais</label>
+						<img src="img/ic-down.png" class="ic-down">
+						<br>
 						<select name="pais" id="pais" required>
-							<option value="">[Selecciona un País]</option>
-							<option value="PE" selected>Perú</option>
+							<option value="" selected=""></option>
+							<option value="PE">Perú</option>
 							<option value="BR">Brasil</option>
 							<option value="CO">Colombia</option>
 							<option value="EC">Ecuador</option>
-						</select>
-
+						</select>		
 					</div>
 
-					<div class="box-form">
-
-						<label for="dominio">Dominio del correo</label>
-						<input type="text" name="dominio"  id="dominio" required>
-						
+					<div class="box-form col-md-12">
+						<label for="dominio" class="label-floating">Dominio del correo</label>
+						<br>
+						<input type="text" name="dominio"  id="dominio" required>						
 					</div>
-
-						
-					
-
 				</div>
 
 				<div class="actions">
 					<a href="#" onclick="$.fancybox.close();" class="btn-cancel">Cancelar</a>
 					<button type="submit" class="btn-confirm bg-green">Aceptar</button>
 				</div>
-
 			</form>
-
-		</div>
+		</div
 
 		<!-- Editar -->
 		<div id="edit-universidad" class="pop-ups">
@@ -263,5 +250,6 @@
 </section>
 
 <?php $script = "universidades.js"; ?>
+<?php $script2 = "administradores.js"; ?>
 
 <?php include 'includes/footer.php' ?>
