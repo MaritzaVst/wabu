@@ -571,50 +571,43 @@
 		</div>
 
 		<!-- Editar -->
-		<div id="editar-curso" class="pop-ups profesores cursos">
-			<form action="#" method="post" id="form-editar-curso" class="form-new container" data-parsley-validate="" enctype="multipart/form-data">
+		<div id="editar-curso" class="pop-ups profesores cursos main-content">
+			<form action="#" method="post" id="form-editar-curso" class="form-new container content-form floating-effect" data-parsley-validate="" enctype="multipart/form-data">
 				<div class="loading"><div class='uil-reload-css' style='-webkit-transform:scale(0.15)'><div></div></div></div>
 				<div class="heading">
 					Editar Curso
 				</div>
-
-				<div class="body one-col">
-					<div class="box-form">
-
-						<label>Código</label>
-						<input type="text" name="codigo" class="codigo" required>
-						
+				<div class="body one-col row">
+					<div class="box-form col-md-8 col-md-offset-2 text-left">
+						<label class="label-floating active">Código</label>
+						<br>
+						<input type="text" name="codigo" class="codigo" required>						
 					</div>
 
-					<div class="box-form">
-
-						<label>Nombre del curso</label>
-						<input type="text" name="nombre" class="nombre" required>
-						
+					<div class="box-form col-md-8 col-md-offset-2 text-left">
+						<label class="label-floating active">Nombre del curso</label>
+						<br>
+						<input type="text" name="nombre" class="nombre" required>					
 					</div>
 
-					<div class="box-form">
-
-						<label>Profesores</label>
+					<div class="box-form col-md-12">
+						<label class="subtitle-blue">Profesores</label>
 						<select name="profesores[]" id="chosen-profesores-edit" class="profesores chosen-profesores" multiple data-placeholder="Busque a los profesores para agregarlos a un curso." required>
 							<option value="1">Alan Garcia</option>
 							<option value="2">Keiko Fujimor</option>
 							<option value="3">Ollanta Humala</option>
 							<option value="4">Toledo</option>
 							<option value="5">PPK</option>
-						</select>
-						
+						</select>						
 					</div>
-
-
 				</div>
-
 				<div class="actions">
 					<a href="#" onclick="$.fancybox.close();" class="btn-cancel">Cancelar</a>
 					<button type="submit" class="btn-confirm bg-green">Aceptar</button>
 				</div>
 			</form>
 		</div>
+
 		<!--Detail-->
 		<div id="detail" class="pop-ups detail cursos">
 			<div class="loading"><div class='uil-reload-css' style='-webkit-transform:scale(0.15)'><div></div></div></div>
