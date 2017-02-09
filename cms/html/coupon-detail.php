@@ -47,7 +47,7 @@
 							<div class="img-preview small-img">
 								<input type="file" class="files" />
 								<div class="img-container">
-									<img class="image absolute-center" src="img/img-premio-chico.png"/>
+									<img class="image absolute-center" src="img/img_cupon_chico.png"/>
 								</div>
 							</div>
 						</div>
@@ -62,7 +62,7 @@
 							<div class="img-preview big-img">
 								<input type="file" class="files" />
 								<div class="img-container">
-									<img class="image absolute-center" src="img/img-premio-grande.png">
+									<img class="image absolute-center" src="img/img_cupon_grande.png">
 								</div>
 							</div>
 						</div>
