@@ -30,9 +30,9 @@
 				<div class="content-form">
 					<div class="row">
 						<div class="img-preview col-md-4">
-							<input type="file" id="files" />
+							<input type="file" class="files" />
 							<div class="img-container">
-								<img id="image" class="absolute-center" src="img/team.png"/>
+								<img class="image absolute-center" src="img/team.png"/>
 							</div>
 						</div>
 						<div class="col-md-8">

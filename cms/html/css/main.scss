@@ -1761,13 +1761,15 @@ input[type=password] {
       margin-top: 30px;
     }
   }
-  form.new-award {
+  form.new-award,
+  form.new-coupon {
+    padding-top: 5em !important;
     .content-form {
       padding-bottom: 80px !important;
     }
     .row.upload-img-block {
       padding-top: 50px !important;
-      label, .puestos p, span {
+      label, &.puestos p, span {
         letter-spacing: 0.3px;
         color: #9b9b9b;
       }

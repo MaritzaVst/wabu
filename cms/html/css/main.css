@@ -1380,38 +1380,57 @@ input[type=password] {
       left: 85%; }
     .main-content #filtrar .btn-save {
       margin-top: 30px; }
-  .main-content form.new-award .content-form {
-    padding-bottom: 80px !important; }
-  .main-content form.new-award .row.upload-img-block {
-    padding-top: 50px !important; }
-    .main-content form.new-award .row.upload-img-block label, .main-content form.new-award .row.upload-img-block .puestos p, .main-content form.new-award .row.upload-img-block span {
-      letter-spacing: 0.3px;
-      color: #9b9b9b; }
-    .main-content form.new-award .row.upload-img-block label, .main-content form.new-award .row.upload-img-block .limit {
-      font-size: 16px; }
-    .main-content form.new-award .row.upload-img-block .puestos p {
-      font-size: 13px; }
-    .main-content form.new-award .row.upload-img-block textarea {
-      width: 548px;
-      min-height: 120px;
-      border-radius: 8px;
-      border: solid 2px #d3d3d3;
-      margin: 10px 0 3px;
-      padding: 5px 10px;
-      color: #5a6066; }
-      .main-content form.new-award .row.upload-img-block textarea:focus {
-        outline: none; }
-    .main-content form.new-award .row.upload-img-block.puestos p {
-      margin-bottom: 30px; }
-    .main-content form.new-award .row.upload-img-block.puestos label:first-of-type {
-      margin-right: 25px; }
-    .main-content form.new-award .row.upload-img-block.puestos label span {
-      margin-right: 10px; }
-    .main-content form.new-award .row.upload-img-block.puestos input {
-      width: 74px !important; }
-  .main-content form.new-award.modify-user .description p, .main-content form.new-award.modify-user .winner p {
-    margin-top: 20px;
-    width: 514px; }
+  .main-content form.new-award,
+  .main-content form.new-coupon {
+    padding-top: 5em !important; }
+    .main-content form.new-award .content-form,
+    .main-content form.new-coupon .content-form {
+      padding-bottom: 80px !important; }
+    .main-content form.new-award .row.upload-img-block,
+    .main-content form.new-coupon .row.upload-img-block {
+      padding-top: 50px !important; }
+      .main-content form.new-award .row.upload-img-block label, .main-content form.new-award .row.upload-img-block.puestos p, .main-content form.new-award .row.upload-img-block span,
+      .main-content form.new-coupon .row.upload-img-block label,
+      .main-content form.new-coupon .row.upload-img-block.puestos p,
+      .main-content form.new-coupon .row.upload-img-block span {
+        letter-spacing: 0.3px;
+        color: #9b9b9b; }
+      .main-content form.new-award .row.upload-img-block label, .main-content form.new-award .row.upload-img-block .limit,
+      .main-content form.new-coupon .row.upload-img-block label,
+      .main-content form.new-coupon .row.upload-img-block .limit {
+        font-size: 16px; }
+      .main-content form.new-award .row.upload-img-block .puestos p,
+      .main-content form.new-coupon .row.upload-img-block .puestos p {
+        font-size: 13px; }
+      .main-content form.new-award .row.upload-img-block textarea,
+      .main-content form.new-coupon .row.upload-img-block textarea {
+        width: 548px;
+        min-height: 120px;
+        border-radius: 8px;
+        border: solid 2px #d3d3d3;
+        margin: 10px 0 3px;
+        padding: 5px 10px;
+        color: #5a6066; }
+        .main-content form.new-award .row.upload-img-block textarea:focus,
+        .main-content form.new-coupon .row.upload-img-block textarea:focus {
+          outline: none; }
+      .main-content form.new-award .row.upload-img-block.puestos p,
+      .main-content form.new-coupon .row.upload-img-block.puestos p {
+        margin-bottom: 30px; }
+      .main-content form.new-award .row.upload-img-block.puestos label:first-of-type,
+      .main-content form.new-coupon .row.upload-img-block.puestos label:first-of-type {
+        margin-right: 25px; }
+      .main-content form.new-award .row.upload-img-block.puestos label span,
+      .main-content form.new-coupon .row.upload-img-block.puestos label span {
+        margin-right: 10px; }
+      .main-content form.new-award .row.upload-img-block.puestos input,
+      .main-content form.new-coupon .row.upload-img-block.puestos input {
+        width: 74px !important; }
+    .main-content form.new-award.modify-user .description p, .main-content form.new-award.modify-user .winner p,
+    .main-content form.new-coupon.modify-user .description p,
+    .main-content form.new-coupon.modify-user .winner p {
+      margin-top: 20px;
+      width: 514px; }
 
 #edit-universidad form .body, #nueva-universidad form .body {
   display: block;
