@@ -1404,13 +1404,14 @@ input[type=password] {
         font-size: 13px; }
       .main-content form.new-award .row.upload-img-block textarea,
       .main-content form.new-coupon .row.upload-img-block textarea {
-        width: 548px;
+        width: 514px;
         min-height: 120px;
         border-radius: 8px;
         border: solid 2px #d3d3d3;
         margin: 10px 0 3px;
-        padding: 5px 10px;
-        color: #5a6066; }
+        padding: 10px 20px;
+        color: #5a6066;
+        font-size: 16px; }
         .main-content form.new-award .row.upload-img-block textarea:focus,
         .main-content form.new-coupon .row.upload-img-block textarea:focus {
           outline: none; }

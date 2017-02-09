@@ -1780,13 +1780,14 @@ input[type=password] {
         font-size: 13px;
       }
       textarea {
-        width: 548px;
+        width: 514px;
         min-height: 120px;
         border-radius: 8px;
         border: solid 2px #d3d3d3;
         margin: 10px 0 3px;
-        padding: 5px 10px;
+        padding: 10px 20px;
         color: #5a6066;
+        font-size: 16px;
         &:focus {
           outline: none;
         }
