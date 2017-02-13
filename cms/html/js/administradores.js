@@ -25,6 +25,17 @@ $(function(){
 			}
 		});
 
+		/*Nice Select floating active*/
+		$(".nice-select").on("click", function(){
+			$(this).addClass("active");
+		});
+
+		/*Select*/
+		$(".content-form").on("click", ".nice-select", function(){
+			$(this).addClass("active");
+			$(this).parent().find("label").addClass("active");
+		});
+
 	/*Checkbox Click*/
 	$(".permisos").find("input").click(function(){
 		if($(this).is(":checked")){

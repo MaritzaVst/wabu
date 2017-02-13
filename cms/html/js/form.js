@@ -1,4 +1,6 @@
 $(function(){
+	/*Iniializa plugin nice select*/
+	$('select').niceSelect();
 
 	/*Añade template de info academica y laboral*/
 	var infoAcademic = $("#academic-template").html();
