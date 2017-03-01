@@ -29,6 +29,18 @@ $(function(){
 		$(".nice-select").on("click", function(){
 			$(this).addClass("active");
 		});
+		$("body").on("click", function(e){
+			var target = e.target;
+			
+			$(".nice-select").each(function(){
+				var click = !$(this).is(target) && $(this).has(target).length == 0;
+				var parent = $(this).parent();
+				if (click && parent.find("select").val() == "" && parent.find("label").hasClass("active")) {
+					parent.find("label").removeClass("active");
+					$(this).removeClass("active");
+				}
+			});
+		});
 
 		/*Select*/
 		$(".content-form").on("click", ".nice-select", function(){
