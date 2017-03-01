@@ -1,4 +1,4 @@
-<?php $style = "" ?>
+<?php $style = "nice-select.css" ?>
 <?php include 'includes/header.php' ?>
 
 <?php include 'includes/main-navigation.php' ?>
@@ -146,7 +146,6 @@
 					<div class="row">
 						<div class="col-md-4">
 							<label for="carrera" class="label-floating active">Validado</label>
-							<img src="img/ic-down.png" class="ic-down">
 							<br>
 							<select name="carrera" class="select-type" required>
 								<option selected value="1">Si</option>
@@ -155,7 +154,6 @@
 						</div>
 						<div class="col-md-4">
 							<label for="ciclo" class="label-floating active">Estado</label>
-							<img src="img/ic-down.png" class="ic-down">
 							<br>
 							<select name="ciclo" class="select-type" required>
 								<option selected value="1">Activo</option>
@@ -231,5 +229,6 @@
 
 </section>
 <?php $script = "file-preview.js"; ?>
+<?php $script2 = "vendor/jquery.nice-select.min.js"; ?>
 <?php $script3 = "administradores.js"; ?>
 <?php include 'includes/footer.php' ?>

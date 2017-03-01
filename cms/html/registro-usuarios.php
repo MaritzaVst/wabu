@@ -1,4 +1,4 @@
-<?php $style = "" ?>
+<?php $style = "nice-select.css" ?>
 <?php include 'includes/header.php' ?>
 
 <?php include 'includes/main-navigation.php' ?>
@@ -53,13 +53,11 @@
 								</div>
 								<div class="col-md-6">
 									<label for="nacimiento" class="label-floating">Fecha de Nacimieto</label>
-									<img src="img/ic_calendar.png" class="ic-calendar">
 									<br>
 									<input type="text" name="nacimiento" required class="datetime">
 								</div>
 								<div class="col-md-6">
 									<label for="type" class="label-floating">Sexo</label>
-									<img src="img/ic-down.png" class="ic-down">
 									<br>
 									<select name="type" class="select-type" required>
 										<option value="" selected=""></option>
@@ -80,7 +78,6 @@
 								</div>
 								<div class="col-md-6">
 									<label for="departamento" class="label-floating">Departamento</label>
-									<img src="img/ic-down.png" class="ic-down">
 									<br>
 									<select name="departamento" class="select-type" required>
 										<option value="" selected=""></option>
@@ -91,7 +88,6 @@
 								</div>
 								<div class="col-md-6">
 									<label for="provincia" class="label-floating">Provincia</label>
-									<img src="img/ic-down.png" class="ic-down">
 									<br>
 									<select name="provincia" class="select-type" required>
 										<option value="" selected=""></option>
@@ -102,7 +98,6 @@
 								</div>
 								<div class="col-md-6">
 									<label for="distrito" class="label-floating">Distrito</label>
-									<img src="img/ic-down.png" class="ic-down">
 									<br>
 									<select name="provincia" class="select-type" required>
 										<option value="" selected=""></option>
@@ -145,7 +140,6 @@
 					<div class="row">
 						<div class="col-md-4">
 							<label for="carrera" class="label-floating">Validado</label>
-							<img src="img/ic-down.png" class="ic-down">
 							<br>
 							<select name="carrera" class="select-type" required>
 								<option value="" selected=""></option>
@@ -155,7 +149,6 @@
 						</div>
 						<div class="col-md-4">
 							<label for="ciclo" class="label-floating">Estado</label>
-							<img src="img/ic-down.png" class="ic-down">
 							<br>
 							<select name="ciclo" class="select-type" required>
 								<option value="" selected=""></option>
@@ -292,4 +285,5 @@
 		</div>
 	</div>
 </script>
+<?php $script = "vendor/jquery.nice-select.min.js"; ?>
 <?php include 'includes/footer.php' ?>
