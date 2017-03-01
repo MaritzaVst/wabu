@@ -39,6 +39,9 @@
 						<div class="col-md-4">
 							<h3 class="subtitle-blue">Posición</h3>
 							<p>2</p>
+							<div class="btn-position text-center">
+								<a href="" class="text-uppercase">Detalle de posición</a>
+							</div>
 						</div>
 					</div>
 					<div class="row winner upload-img-block">

@@ -49,6 +49,9 @@
 								<option value="2">2</option>
 								<option value="3">3</option>
 							</select>
+							<div class="btn-position text-center">
+								<a href="" class="text-uppercase">Detalle de posición</a>
+							</div>
 						</div>	
 					</div>
 					<div class="row winner upload-img-block">

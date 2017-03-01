@@ -544,6 +544,24 @@ input {
   .btn-cancel:hover {
     text-decoration: none !important; }
 
+.btn-position {
+  width: 240px;
+  height: 27px;
+  border-radius: 100px;
+  border: solid 2px #1283ff;
+  margin-top: 24px;
+  line-height: 1.5; }
+  .btn-position a {
+    letter-spacing: 0.3px;
+    color: #1283ff;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none; }
+  .btn-position:hover {
+    background-color: #1283ff; }
+    .btn-position:hover a {
+      color: white; }
+
 .token-input-dropdown {
   border: 0 !important; }
   .token-input-dropdown .alternative-text {

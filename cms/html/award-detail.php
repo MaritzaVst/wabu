@@ -45,12 +45,13 @@
 							<p>01/01/2017</p>
 						</div>
 						<div class="col-md-4">
-							<h3 class="subtitle-blue">Hora</h3>
-							<p>16:00</p>
-						</div>
-						<div class="col-md-4">
 							<h3 class="subtitle-blue">Fecha de Fin</h3>
 							<p>02/01/2017</p>
+						</div>
+						<div class="col-md-4">
+							<div class="btn-position text-center">
+								<a href="" class="text-uppercase">Detalle de posición</a>
+							</div>
 						</div>
 					</div>
 					<div class="row puestos">

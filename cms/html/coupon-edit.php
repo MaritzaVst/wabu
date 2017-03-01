@@ -1,4 +1,4 @@
-<?php $style = "" ?>
+<?php $style = "nice-select.css" ?>
 <?php include 'includes/header.php' ?>
 
 <?php include 'includes/main-navigation.php' ?>
@@ -41,15 +41,17 @@
 						</div>
 
 						<div class="col-md-4">
-							<label for="position" class="label-floating active">Posicición</label>
-							<img src="img/ic-down.png" class="ic-down">
+							<label for="position" class="label-floating">Posicición</label>
 							<br>
 							<select name="position" class="select-type" required>
-								<option value=""></option>
+								<option value="" selected=""></option>
 								<option value="1">1</option>
-								<option value="2" selected="">2</option>
+								<option value="2">2</option>
 								<option value="3">3</option>
 							</select>
+							<div class="btn-position text-center">
+								<a href="" class="text-uppercase">Detalle de posición</a>
+							</div>
 						</div>	
 					</div>
 					<div class="row winner upload-img-block">
@@ -98,5 +100,6 @@
 
 </section>
 <?php $script = "file-preview.js"; ?>
+<?php $script2 = "vendor/jquery.nice-select.min.js"; ?>
 <?php $script3 = "administradores.js"; ?>
 <?php include 'includes/footer.php' ?>

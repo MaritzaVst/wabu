@@ -62,15 +62,15 @@
 							<input type="text" name="start-date" required class="datetime">
 						</div>
 						<div class="col-md-4">
-							<label for="hour" class="label-floating">Hora</label>
-							<br>
-							<input type="number" name="hour" required>
-						</div>
-						<div class="col-md-4">
 							<label for="ending-date" class="label-floating">Fecha de Fin</label>
 							<img src="img/ic_calendar.png" class="ic-calendar">
 							<br>
 							<input type="text" name="ending-date" required class="datetime">
+						</div>
+						<div class="col-md-4">
+							<div class="btn-position text-center">
+								<a href="" class="text-uppercase">Detalle de posición</a>
+							</div>
 						</div>
 					</div>
 					<div class="row puestos upload-img-block">

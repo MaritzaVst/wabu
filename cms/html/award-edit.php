@@ -43,7 +43,6 @@
 								<option value="2">Semanal</option>
 							</select>
 						</div>
-						<div class="col-md-4"></div>
 						<div class="col-md-4">
 							<label for="position" class="label-floating active">Posicición</label>
 							<img src="img/ic-down.png" class="ic-down">
@@ -56,32 +55,21 @@
 							</select>
 						</div>
 						<div class="col-md-4">
-							<label for="position" class="label-floating active">Estado</label>
-							<img src="img/ic-down.png" class="ic-down">
-							<br>
-							<select name="position" class="select-type" required>
-								<option value=""></option>
-								<option value="1" selected>Activo</option>
-								<option value="2">Inactivo</option>
-							</select>
-						</div>
-						<div class="col-md-4"></div>
-						<div class="col-md-4">
 							<label for="start-date" class="label-floating active">Fecha de Inicio</label>
 							<img src="img/ic_calendar.png" class="ic-calendar">
 							<br>
 							<input type="text" name="start-date" required value="01/01/2017">
 						</div>
 						<div class="col-md-4">
-							<label for="hour" class="label-floating active">Hora</label>
-							<br>
-							<input type="text" name="hour" required value="16:00">
-						</div>
-						<div class="col-md-4">
 							<label for="ending-date" class="label-floating active">Fecha de Fin</label>
 							<img src="img/ic_calendar.png" class="ic-calendar">
 							<br>
 							<input type="text" name="ending-date" required value="02/01/2017">
+						</div>
+						<div class="col-md-4">
+							<div class="btn-position text-center">
+								<a href="" class="text-uppercase">Detalle de posición</a>
+							</div>
 						</div>
 					</div>
 					<div class="row puestos upload-img-block">
