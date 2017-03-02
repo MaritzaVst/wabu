@@ -25,6 +25,9 @@ $(function(){
 			}
 		});
 
+		/*Inicializa plugin nice select*/
+		$('select').niceSelect();
+
 		/*Nice Select floating effect*/
 		$(".content-form").on("click", ".nice-select", function(e){
 			$(this).addClass("active");

@@ -661,6 +661,53 @@ input {
   .award-dates .select-type {
     width: 100% !important; }
 
+#position-detail .body {
+  padding: 28px 32px 50px; }
+
+#position-detail .row {
+  margin: 0 5px;
+  width: 620px; }
+  #position-detail .row > div {
+    width: 20% !important;
+    padding: 0 2px 15px; }
+
+#position-detail .position-box {
+  width: 108px;
+  /*height: 108px;*/
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+  letter-spacing: 0.3px;
+  padding: 9px;
+  display: inline-block; }
+  #position-detail .position-box h4 {
+    font-size: 12px; }
+    #position-detail .position-box h4:first-child {
+      color: #1ee49e;
+      margin: 0; }
+    #position-detail .position-box h4:last-of-type {
+      color: #1283ff;
+      margin-top: 0; }
+  #position-detail .position-box > div {
+    margin: 0 auto;
+    width: 65%; }
+    #position-detail .position-box > div label {
+      font-size: 13px;
+      color: #d3d3d3; }
+    #position-detail .position-box > div .nice-select.select-type {
+      width: 100%;
+      border-bottom: solid 2px #d3d3d3;
+      border-radius: 0;
+      height: 25px;
+      padding-left: 4px; }
+      #position-detail .position-box > div .nice-select.select-type span {
+        color: #5a6066; }
+      #position-detail .position-box > div .nice-select.select-type:after {
+        margin-top: -7px;
+        right: 5px; }
+      #position-detail .position-box > div .nice-select.select-type li {
+        display: block; }
+
 .login {
   display: block;
   height: 100%;

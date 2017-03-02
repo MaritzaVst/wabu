@@ -30,6 +30,21 @@ $(function(){
 		}
 	});
 
-	/*Iniializa plugin nice select*/
-	$('select').niceSelect();
+	/*Award type*/
+	var diario = $("#daily-form-template").html();
+	var semanal = $("#weekly-form-template").html();
+	var mensual = $("#monthly-form-template").html();
+	$(".input-type").change(function(){
+		var selectValue = $(this).parent().find("select");
+		if(selectValue.val() == 1) {
+			$(".award-dates").html("");
+			$(".award-dates").append(diario);
+		} else if (selectValue.val() == 2) {
+			$(".award-dates").html("");
+			$(".award-dates").append(semanal);
+		} else if (selectValue.val() == 3) {
+			$(".award-dates").html("");
+			$(".award-dates").append(mensual);
+		}
+	});
 })

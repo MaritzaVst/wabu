@@ -570,7 +570,7 @@
 			</form>
 		</div>
 
-		<!-- Editar -->
+		<!-- Edi -->
 		<div id="editar-curso" class="pop-ups profesores cursos main-content">
 			<form action="#" method="post" id="form-editar-curso" class="form-new container content-form floating-effect" data-parsley-validate="" enctype="multipart/form-data">
 				<div class="loading"><div class='uil-reload-css' style='-webkit-transform:scale(0.15)'><div></div></div></div>

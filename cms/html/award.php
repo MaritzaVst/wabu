@@ -34,9 +34,9 @@
 							<input type="text" name="name" required>
 						</div>
 						<div class="col-md-4">
-							<label for="type" id="type" class="label-floating">Tipo</label>
+							<label for="type" class="label-floating">Tipo</label>
 							<br>
-							<select name="type" class="select-type" required>
+							<select name="type" class="select-type input-type" required>
 								<option value="" selected=""></option>
 								<option value="1">Diario</option>
 								<option value="2">Semanal</option>
@@ -44,7 +44,7 @@
 							</select>
 						</div>
 						<div class="col-md-4">
-							<label for="position" class="label-floating">Posicición</label>
+							<label for="position" class="label-floating">Posición</label>
 							<br>
 							<select name="position" class="select-type" required>
 								<option value="" selected=""></option>
@@ -105,7 +105,7 @@
 						</div>
 						<div class="col-md-4">
 							<div class="btn-position text-center">
-								<a href="" class="text-uppercase">Detalle de posición</a>
+								<a href="#position-detail" class="pop-up-position text-uppercase">Detalle de posición</a>
 							</div>
 						</div>
 					</div>
@@ -184,9 +184,123 @@
 			</form>
 		</div>
 	</section>
-
+	<!--Popups: Desactivar, Nuevo -->
+	<section class="hidden boxes">
+		<div id="position-detail" class="pop-ups">
+			<div class="loading"><div class='uil-reload-css' style='-webkit-transform:scale(0.15)'><div></div></div></div>
+			<div class="heading">
+				Detalle de posición
+			</div>
+			<div class="body">
+				<div class="row">
+					<div class="col-md-2">
+						<div class="position-box">
+							<h4>Lunes</h4>
+							<h4>02/01/2017</h4>
+							<div class="clearfix">
+								<label for="position">Posición</label>
+								<select name="position" class="select-type">
+									<option value="1" selected>1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="position-box">
+							<h4>Lunes</h4>
+							<h4>02/01/2017</h4>
+							<div class="clearfix">
+								<label for="position">Posición</label>
+								<select name="position" class="select-type">
+									<option value="1" selected>1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="position-box">
+							<h4>Lunes</h4>
+							<h4>02/01/2017</h4>
+							<div class="clearfix">
+								<label for="position">Posición</label>
+								<select name="position" class="select-type">
+									<option value="1" selected>1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="position-box">
+							<h4>Lunes</h4>
+							<h4>02/01/2017</h4>
+							<div class="clearfix">
+								<label for="position">Posición</label>
+								<select name="position" class="select-type">
+									<option value="1" selected>1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="position-box">
+							<h4>Lunes</h4>
+							<h4>02/01/2017</h4>
+							<div class="clearfix">
+								<label for="position">Posición</label>
+								<select name="position" class="select-type">
+									<option value="1" selected>1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="position-box">
+							<h4>Lunes</h4>
+							<h4>02/01/2017</h4>
+							<div class="clearfix">
+								<label for="position">Posición</label>
+								<select name="position" class="select-type">
+									<option value="1" selected>1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="position-box">
+							<h4>Lunes</h4>
+							<h4>02/01/2017</h4>
+							<div class="clearfix">
+								<label for="position">Posición</label>
+								<select name="position" class="select-type">
+									<option value="1" selected>1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="actions">
+				<a href="#" onclick="$.fancybox.close();" class="btn-cancel">Cancelar</a>
+				<a href="javascript:;" class="btn-confirm bg-green">Guardar</a>
+			</div>
+		</div>
+	</section>
 </section>
-<script id="diario-form-template" type="text/template">
+<script id="daily-form-template" type="text/template">
 	<div class="col-md-6">
 		<label for="start-date" class="label-floating">Fecha de Inicio</label>
 		<img src="img/ic_calendar.png" class="ic-calendar">
@@ -200,7 +314,7 @@
 		<input type="text" name="ending-date" required class="datetime">
 	</div>
 </script>
-<script id="semanal-form-template" type="text/template">
+<script id="weekly-form-template" type="text/template">
 	<div class="col-md-6">
 		<label for="start-date" class="label-floating">Fecha de Inicio</label>
 		<img src="img/ic_calendar.png" class="ic-calendar">
@@ -213,10 +327,58 @@
 		<input type="number" name="duration" required">
 	</div>
 </script>
-<script id="mensual-form-template" type="text/template">
-	
+<script id="monthly-form-template" type="text/template">
+	<div class="col-md-6">
+		<div class="row">
+			<div class="col-md-7">
+				<label for="start-month" class="label-floating">Mes de inicio</label>
+				<br>
+				<select name="start-month" class="select-type" required>
+					<option value="" selected=""></option>
+					<option value="1">Enero</option>
+					<option value="2">Febrero</option>
+					<option value="3">Marzo</option>
+				</select>
+			</div>
+			<div class="col-md-5">
+				<label for="year" class="label-floating">Año</label>
+				<br>
+				<select name="year" class="select-type" required>
+					<option value="" selected=""></option>
+					<option value="1">1948</option>
+					<option value="2">2002</option>
+					<option value="3">2015</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-6">
+		<div class="row">
+			<div class="col-md-7">
+				<label for="end-month" class="label-floating">Mes de inicio</label>
+				<br>
+				<select name="start-month" class="select-type" required>
+					<option value="" selected=""></option>
+					<option value="1">Enero</option>
+					<option value="2">Febrero</option>
+					<option value="3">Marzo</option>
+				</select>
+			</div>
+			<div class="col-md-5">
+				<label for="year" class="label-floating">Año</label>
+				<br>
+				<select name="year" class="select-type" required>
+					<option value="" selected=""></option>
+					<option value="1">1948</option>
+					<option value="2">2002</option>
+					<option value="3">2015</option>
+				</select>
+			</div>
+		</div>
+	</div>
 </script>
 <?php $script = "file-preview.js"; ?>
-<?php $script2 = "vendor/jquery.nice-select.min.js"; ?>
-<?php $script3 = "administradores.js"; ?>
+<?php $script1 = "pop-up-award.js"; ?>
+<?php $script3 = "vendor/jquery.nice-select.min.js"; ?>
+<?php $script2 = "administradores.js"; ?>
 <?php include 'includes/footer.php' ?>
