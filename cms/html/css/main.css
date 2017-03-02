@@ -651,6 +651,16 @@ input {
     .nice-select.select-type .list li:first-child {
       display: none; }
 
+.award-dates {
+  padding: 0; }
+  .award-dates > div .ic-calendar {
+    bottom: 10px !important; }
+  .award-dates .row {
+    padding-top: 0 !important;
+    width: 270px; }
+  .award-dates .select-type {
+    width: 100% !important; }
+
 .login {
   display: block;
   height: 100%;

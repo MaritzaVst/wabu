@@ -1,4 +1,6 @@
 <?php $style = "tokeninput/token-input.css"; ?>
+<?php $style2 = "nice-select.css" ?>
+
 <?php include 'includes/header.php' ?>
 
 <?php include 'includes/main-navigation.php' ?>
@@ -51,9 +53,8 @@
 						</div>
 						<div class="col-md-4">
 							<label for="status" class="label-floating select-label">Estado</label>
-							<img src="img/ic-down.png" class="ic-down">
 							<br>
-							<select name="status" required>
+							<select name="status" class="select-type" required>
 								<option value="" selected=""></option>
 								<option value="activo">Activo</option>
 								<option value="inactivo">Inactivo</option>
@@ -143,7 +144,7 @@
 	</section>
 
 </section>
-
+<?php $script1 = "vendor/jquery.nice-select.min.js"; ?>
 <?php $script = "profesores.js"; ?>
 <?php $script2 = "vendor/tokeninput/jquery.tokeninput.js"; ?>
 <?php $script3 = "administradores.js"; ?>

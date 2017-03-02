@@ -794,6 +794,19 @@ input {
     }
   }
 }
+.award-dates {
+  padding: 0;
+  > div .ic-calendar {
+    bottom: 10px !important;
+  }
+  .row {
+    padding-top: 0!important;
+    width: 270px;
+  }
+  .select-type {
+    width: 100%!important;
+  }
+}
 
 .login {
   display: block;
